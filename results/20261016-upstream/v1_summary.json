@@ -1,0 +1,5997 @@
+[
+  {
+    "budget": 512,
+    "workload": "all_decode",
+    "candidate": "v1_async_auto",
+    "baseline": {
+      "observations": 6,
+      "median": {
+        "output_tok_s": 1340.4619456771397,
+        "wall_ms": 140.25037400000429,
+        "ttft_mean_ms": null,
+        "ttft_p95_ms": null,
+        "tpot_mean_ms": 2.9841214468088775,
+        "existing_tpot_ms": 2.9841214468088775,
+        "request_max_gap_mean_ms": 3.864888499975905,
+        "existing_max_gap_mean_ms": 3.864888499975905,
+        "existing_gap_mean_ms": 2.9841214468088775,
+        "max_token_gap_ms": 3.864888499975905,
+        "gap_p95_ms": 3.451528499994083,
+        "kv_peak_blocks": 4.0,
+        "kv_peak_mib": 112.0,
+        "forward_count": 47.0,
+        "mixed_forward_count": 0.0,
+        "eager_count": 0.0,
+        "full_graph_replays": 47.0,
+        "piecewise_graph_replays": 0.0,
+        "piecewise_segment_replays": 0.0,
+        "cuda_graph_replays": 47.0,
+        "gpu_feedback_tokens": 0.0,
+        "async_depth": 0.0,
+        "scheduler_ms": 0.15919799997732298,
+        "cpu_step_ms": 139.99367450000477,
+        "prefill_tokens": 0.0,
+        "decode_tokens": 188.0,
+        "steps": 47.0,
+        "empty_steps": 0.0
+      },
+      "range": {
+        "output_tok_s": [
+          1320.6033260591962,
+          1362.768998730247
+        ],
+        "wall_ms": [
+          137.95441500002426,
+          142.3591749999673
+        ],
+        "ttft_mean_ms": null,
+        "ttft_p95_ms": null,
+        "tpot_mean_ms": [
+          2.9352291063838356,
+          3.028968106383808
+        ],
+        "existing_tpot_ms": [
+          2.9352291063838356,
+          3.028968106383808
+        ],
+        "request_max_gap_mean_ms": [
+          3.614817000027415,
+          4.7187819999976455
+        ],
+        "existing_max_gap_mean_ms": [
+          3.614817000027415,
+          4.7187819999976455
+        ],
+        "existing_gap_mean_ms": [
+          2.9352291063838356,
+          3.028968106383808
+        ],
+        "max_token_gap_ms": [
+          3.614817000027415,
+          4.7187819999976455
+        ],
+        "gap_p95_ms": [
+          3.399226999988514,
+          3.675416000021414
+        ],
+        "kv_peak_blocks": [
+          4,
+          4
+        ],
+        "kv_peak_mib": [
+          112.0,
+          112.0
+        ],
+        "forward_count": [
+          47,
+          47
+        ],
+        "mixed_forward_count": [
+          0,
+          0
+        ],
+        "eager_count": [
+          0,
+          0
+        ],
+        "full_graph_replays": [
+          47,
+          47
+        ],
+        "piecewise_graph_replays": [
+          0,
+          0
+        ],
+        "piecewise_segment_replays": [
+          0,
+          0
+        ],
+        "cuda_graph_replays": [
+          47,
+          47
+        ],
+        "gpu_feedback_tokens": [
+          0,
+          0
+        ],
+        "async_depth": [
+          0,
+          0
+        ],
+        "scheduler_ms": [
+          0.15423700028804888,
+          0.18079199998055628
+        ],
+        "cpu_step_ms": [
+          137.70803800002795,
+          142.1067009999888
+        ],
+        "prefill_tokens": [
+          0,
+          0
+        ],
+        "decode_tokens": [
+          188,
+          188
+        ],
+        "steps": [
+          47,
+          47
+        ],
+        "empty_steps": [
+          0,
+          0
+        ]
+      }
+    },
+    "optimized": {
+      "observations": 6,
+      "median": {
+        "output_tok_s": 1519.5781807075882,
+        "wall_ms": 123.718735500006,
+        "ttft_mean_ms": null,
+        "ttft_p95_ms": null,
+        "tpot_mean_ms": 2.6322421170212413,
+        "existing_tpot_ms": 2.6322421170212413,
+        "request_max_gap_mean_ms": 3.2945095000229685,
+        "existing_max_gap_mean_ms": 3.2945095000229685,
+        "existing_gap_mean_ms": 2.6322421170212413,
+        "max_token_gap_ms": 3.2945095000229685,
+        "gap_p95_ms": 3.038534000012305,
+        "kv_peak_blocks": 4.0,
+        "kv_peak_mib": 112.0,
+        "forward_count": 47.0,
+        "mixed_forward_count": 0.0,
+        "eager_count": 0.0,
+        "full_graph_replays": 47.0,
+        "piecewise_graph_replays": 0.0,
+        "piecewise_segment_replays": 0.0,
+        "cuda_graph_replays": 47.0,
+        "gpu_feedback_tokens": 184.0,
+        "async_depth": 2.0,
+        "scheduler_ms": 0.9807400002443956,
+        "cpu_step_ms": 123.46574799983046,
+        "prefill_tokens": 0.0,
+        "decode_tokens": 188.0,
+        "steps": 48.0,
+        "empty_steps": 1.0
+      },
+      "range": {
+        "output_tok_s": [
+          1487.9783066688806,
+          1539.5292687812985
+        ],
+        "wall_ms": [
+          122.11524899998949,
+          126.34592800003475
+        ],
+        "ttft_mean_ms": null,
+        "ttft_p95_ms": null,
+        "tpot_mean_ms": [
+          2.5982562553189323,
+          2.6879730425536494
+        ],
+        "existing_tpot_ms": [
+          2.5982562553189323,
+          2.6879730425536494
+        ],
+        "request_max_gap_mean_ms": [
+          3.0233740000085163,
+          4.095164999966983
+        ],
+        "existing_max_gap_mean_ms": [
+          3.0233740000085163,
+          4.095164999966983
+        ],
+        "existing_gap_mean_ms": [
+          2.5982562553189323,
+          2.6879730425536494
+        ],
+        "max_token_gap_ms": [
+          3.0233740000085163,
+          4.095164999966983
+        ],
+        "gap_p95_ms": [
+          2.9765999999540327,
+          3.079396000032375
+        ],
+        "kv_peak_blocks": [
+          4,
+          4
+        ],
+        "kv_peak_mib": [
+          112.0,
+          112.0
+        ],
+        "forward_count": [
+          47,
+          47
+        ],
+        "mixed_forward_count": [
+          0,
+          0
+        ],
+        "eager_count": [
+          0,
+          0
+        ],
+        "full_graph_replays": [
+          47,
+          47
+        ],
+        "piecewise_graph_replays": [
+          0,
+          0
+        ],
+        "piecewise_segment_replays": [
+          0,
+          0
+        ],
+        "cuda_graph_replays": [
+          47,
+          47
+        ],
+        "gpu_feedback_tokens": [
+          184,
+          184
+        ],
+        "async_depth": [
+          2,
+          2
+        ],
+        "scheduler_ms": [
+          0.9135520000427277,
+          1.0540610001044115
+        ],
+        "cpu_step_ms": [
+          121.88008800023908,
+          126.0968870003012
+        ],
+        "prefill_tokens": [
+          0,
+          0
+        ],
+        "decode_tokens": [
+          188,
+          188
+        ],
+        "steps": [
+          48,
+          48
+        ],
+        "empty_steps": [
+          1,
+          1
+        ]
+      }
+    },
+    "change_pct": {
+      "output_tok_s": 13.362276758999458,
+      "wall_ms": -11.787233095006055,
+      "ttft_mean_ms": null,
+      "ttft_p95_ms": null,
+      "tpot_mean_ms": -11.791722825621742,
+      "existing_tpot_ms": -11.791722825621742,
+      "request_max_gap_mean_ms": -14.757967790183136,
+      "existing_max_gap_mean_ms": -14.757967790183136,
+      "existing_gap_mean_ms": -11.791722825621742,
+      "max_token_gap_ms": -14.757967790183136,
+      "gap_p95_ms": -11.965553811376207,
+      "kv_peak_blocks": 0.0,
+      "kv_peak_mib": 0.0,
+      "forward_count": 0.0,
+      "mixed_forward_count": null,
+      "eager_count": null,
+      "full_graph_replays": 0.0,
+      "piecewise_graph_replays": null,
+      "piecewise_segment_replays": null,
+      "cuda_graph_replays": 0.0,
+      "gpu_feedback_tokens": null,
+      "async_depth": null,
+      "scheduler_ms": 516.0504531364071,
+      "cpu_step_ms": -11.806195215037196,
+      "prefill_tokens": null,
+      "decode_tokens": 0.0,
+      "steps": 2.127659574468077,
+      "empty_steps": null
+    },
+    "paired_change_pct": {
+      "output_tok_s": {
+        "values": [
+          14.594628554528022,
+          14.13530564695411,
+          11.142741379014588,
+          13.971245755047669,
+          11.645390787246646,
+          14.923804696468967
+        ],
+        "mean": 13.402186136543333,
+        "median": 14.053275701000889
+      },
+      "wall_ms": {
+        "values": [
+          -12.735874917194224,
+          -12.38469163142012,
+          -10.02561322562312,
+          -12.258570714472416,
+          -10.430695530851164,
+          -12.98582546573791
+        ],
+        "mean": -11.803545247549826,
+        "median": -12.321631172946269
+      },
+      "ttft_mean_ms": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "ttft_p95_ms": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "tpot_mean_ms": {
+        "values": [
+          -12.736388793446396,
+          -12.395957224606512,
+          -10.034344044272103,
+          -12.276118834009054,
+          -10.437362068108024,
+          -12.986352960744762
+        ],
+        "mean": -11.811087320864475,
+        "median": -12.336038029307783
+      },
+      "existing_tpot_ms": {
+        "values": [
+          -12.736388793446396,
+          -12.395957224606512,
+          -10.034344044272103,
+          -12.276118834009054,
+          -10.437362068108024,
+          -12.986352960744762
+        ],
+        "mean": -11.811087320864475,
+        "median": -12.336038029307783
+      },
+      "request_max_gap_mean_ms": {
+        "values": [
+          -18.316030373296734,
+          -8.492798753827913,
+          -30.256914065342677,
+          -16.361630478511447,
+          -0.9069886937345784,
+          -13.215634882708594
+        ],
+        "mean": -14.591666207903657,
+        "median": -14.788632680610021
+      },
+      "existing_max_gap_mean_ms": {
+        "values": [
+          -18.316030373296734,
+          -8.492798753827913,
+          -30.256914065342677,
+          -16.361630478511447,
+          -0.9069886937345784,
+          -13.215634882708594
+        ],
+        "mean": -14.591666207903657,
+        "median": -14.788632680610021
+      },
+      "existing_gap_mean_ms": {
+        "values": [
+          -12.736388793446396,
+          -12.395957224606512,
+          -10.034344044272103,
+          -12.276118834009054,
+          -10.437362068108024,
+          -12.986352960744762
+        ],
+        "mean": -11.811087320864475,
+        "median": -12.336038029307783
+      },
+      "max_token_gap_ms": {
+        "values": [
+          -18.316030373296734,
+          -8.492798753827913,
+          -30.256914065342677,
+          -16.361630478511447,
+          -0.9069886937345784,
+          -13.215634882708594
+        ],
+        "mean": -14.591666207903657,
+        "median": -14.788632680610021
+      },
+      "gap_p95_ms": {
+        "values": [
+          -11.470397137713018,
+          -10.891822196221945,
+          -16.928859209382253,
+          -15.350782649027405,
+          -11.250734357413162,
+          -11.423559068004396
+        ],
+        "mean": -12.886025769627029,
+        "median": -11.446978102858708
+      },
+      "kv_peak_blocks": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "kv_peak_mib": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "forward_count": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "mixed_forward_count": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "eager_count": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "full_graph_replays": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "piecewise_graph_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "piecewise_segment_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "cuda_graph_replays": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "gpu_feedback_tokens": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "async_depth": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "scheduler_ms": {
+        "values": [
+          490.24853393174396,
+          446.850524511225,
+          445.38464362179593,
+          540.8590585149424,
+          583.4034622923652,
+          512.5286488934087
+        ],
+        "mean": 503.2124786275802,
+        "median": 501.3885914125763
+      },
+      "cpu_step_ms": {
+        "values": [
+          -12.746042219943387,
+          -12.403569472837972,
+          -10.03533330004035,
+          -12.293990752524076,
+          -10.4628278853945,
+          -13.00085630730441
+        ],
+        "mean": -11.823769989674116,
+        "median": -12.348780112681023
+      },
+      "prefill_tokens": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "decode_tokens": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "steps": {
+        "values": [
+          2.127659574468077,
+          2.127659574468077,
+          2.127659574468077,
+          2.127659574468077,
+          2.127659574468077,
+          2.127659574468077
+        ],
+        "mean": 2.127659574468077,
+        "median": 2.127659574468077
+      },
+      "empty_steps": {
+        "values": [],
+        "mean": null,
+        "median": null
+      }
+    }
+  },
+  {
+    "budget": 512,
+    "workload": "all_prefill",
+    "candidate": "v1_async_auto",
+    "baseline": {
+      "observations": 6,
+      "median": {
+        "output_tok_s": 44.02311223761061,
+        "wall_ms": 68.17885649999766,
+        "ttft_mean_ms": 40.03387766667288,
+        "ttft_p95_ms": 64.47246800000812,
+        "tpot_mean_ms": null,
+        "existing_tpot_ms": null,
+        "request_max_gap_mean_ms": null,
+        "existing_max_gap_mean_ms": null,
+        "existing_gap_mean_ms": null,
+        "max_token_gap_ms": null,
+        "gap_p95_ms": null,
+        "kv_peak_blocks": 4.0,
+        "kv_peak_mib": 112.0,
+        "forward_count": 4.0,
+        "mixed_forward_count": 0.0,
+        "eager_count": 4.0,
+        "full_graph_replays": 0.0,
+        "piecewise_graph_replays": 0.0,
+        "piecewise_segment_replays": 0.0,
+        "cuda_graph_replays": 0.0,
+        "gpu_feedback_tokens": 0.0,
+        "async_depth": 0.0,
+        "scheduler_ms": 0.06633200001715522,
+        "cpu_step_ms": 67.81565450003768,
+        "prefill_tokens": 1800.0,
+        "decode_tokens": 0.0,
+        "steps": 4.0,
+        "empty_steps": 1.0
+      },
+      "range": {
+        "output_tok_s": [
+          38.92717838241707,
+          48.80863967588917
+        ],
+        "wall_ms": [
+          61.464527999987695,
+          77.06697800000484
+        ],
+        "ttft_mean_ms": [
+          36.16562699998364,
+          46.70625566666331
+        ],
+        "ttft_p95_ms": [
+          58.1241900999828,
+          72.87224030000061
+        ],
+        "tpot_mean_ms": null,
+        "existing_tpot_ms": null,
+        "request_max_gap_mean_ms": null,
+        "existing_max_gap_mean_ms": null,
+        "existing_gap_mean_ms": null,
+        "max_token_gap_ms": null,
+        "gap_p95_ms": null,
+        "kv_peak_blocks": [
+          4,
+          4
+        ],
+        "kv_peak_mib": [
+          112.0,
+          112.0
+        ],
+        "forward_count": [
+          4,
+          4
+        ],
+        "mixed_forward_count": [
+          0,
+          0
+        ],
+        "eager_count": [
+          4,
+          4
+        ],
+        "full_graph_replays": [
+          0,
+          0
+        ],
+        "piecewise_graph_replays": [
+          0,
+          0
+        ],
+        "piecewise_segment_replays": [
+          0,
+          0
+        ],
+        "cuda_graph_replays": [
+          0,
+          0
+        ],
+        "gpu_feedback_tokens": [
+          0,
+          0
+        ],
+        "async_depth": [
+          0,
+          0
+        ],
+        "scheduler_ms": [
+          0.06357199998774377,
+          0.07412599995859637
+        ],
+        "cpu_step_ms": [
+          61.11197899997478,
+          76.64197100001502
+        ],
+        "prefill_tokens": [
+          1800,
+          1800
+        ],
+        "decode_tokens": [
+          0,
+          0
+        ],
+        "steps": [
+          4,
+          4
+        ],
+        "empty_steps": [
+          1,
+          1
+        ]
+      }
+    },
+    "optimized": {
+      "observations": 6,
+      "median": {
+        "output_tok_s": 83.01770094533441,
+        "wall_ms": 36.137489499992625,
+        "ttft_mean_ms": 21.5773921666577,
+        "ttft_p95_ms": 34.13103594997153,
+        "tpot_mean_ms": null,
+        "existing_tpot_ms": null,
+        "request_max_gap_mean_ms": null,
+        "existing_max_gap_mean_ms": null,
+        "existing_gap_mean_ms": null,
+        "max_token_gap_ms": null,
+        "gap_p95_ms": null,
+        "kv_peak_blocks": 5.0,
+        "kv_peak_mib": 140.0,
+        "forward_count": 4.0,
+        "mixed_forward_count": 0.0,
+        "eager_count": 1.0,
+        "full_graph_replays": 0.0,
+        "piecewise_graph_replays": 3.0,
+        "piecewise_segment_replays": 87.0,
+        "cuda_graph_replays": 87.0,
+        "gpu_feedback_tokens": 0.0,
+        "async_depth": 2.0,
+        "scheduler_ms": 0.21945750003737885,
+        "cpu_step_ms": 35.77643099998795,
+        "prefill_tokens": 1800.0,
+        "decode_tokens": 0.0,
+        "steps": 5.0,
+        "empty_steps": 2.0
+      },
+      "range": {
+        "output_tok_s": [
+          76.3690507905492,
+          86.4977651715443
+        ],
+        "wall_ms": [
+          34.68297700004541,
+          39.28292899996677
+        ],
+        "ttft_mean_ms": [
+          20.88983166667428,
+          22.865983666671735
+        ],
+        "ttft_p95_ms": [
+          32.78101049999691,
+          36.97136930000511
+        ],
+        "tpot_mean_ms": null,
+        "existing_tpot_ms": null,
+        "request_max_gap_mean_ms": null,
+        "existing_max_gap_mean_ms": null,
+        "existing_gap_mean_ms": null,
+        "max_token_gap_ms": null,
+        "gap_p95_ms": null,
+        "kv_peak_blocks": [
+          5,
+          5
+        ],
+        "kv_peak_mib": [
+          140.0,
+          140.0
+        ],
+        "forward_count": [
+          4,
+          4
+        ],
+        "mixed_forward_count": [
+          0,
+          0
+        ],
+        "eager_count": [
+          1,
+          1
+        ],
+        "full_graph_replays": [
+          0,
+          0
+        ],
+        "piecewise_graph_replays": [
+          3,
+          3
+        ],
+        "piecewise_segment_replays": [
+          87,
+          87
+        ],
+        "cuda_graph_replays": [
+          87,
+          87
+        ],
+        "gpu_feedback_tokens": [
+          0,
+          0
+        ],
+        "async_depth": [
+          2,
+          2
+        ],
+        "scheduler_ms": [
+          0.20975500001441105,
+          0.26879500001086853
+        ],
+        "cpu_step_ms": [
+          34.32330800001182,
+          38.89709100002392
+        ],
+        "prefill_tokens": [
+          1800,
+          1800
+        ],
+        "decode_tokens": [
+          0,
+          0
+        ],
+        "steps": [
+          5,
+          5
+        ],
+        "empty_steps": [
+          2,
+          2
+        ]
+      }
+    },
+    "change_pct": {
+      "output_tok_s": 88.57753740184057,
+      "wall_ms": -46.99604634760358,
+      "ttft_mean_ms": -46.10216790310998,
+      "ttft_p95_ms": -47.061068067120935,
+      "tpot_mean_ms": null,
+      "existing_tpot_ms": null,
+      "request_max_gap_mean_ms": null,
+      "existing_max_gap_mean_ms": null,
+      "existing_gap_mean_ms": null,
+      "max_token_gap_ms": null,
+      "gap_p95_ms": null,
+      "kv_peak_blocks": 25.0,
+      "kv_peak_mib": 25.0,
+      "forward_count": 0.0,
+      "mixed_forward_count": null,
+      "eager_count": -75.0,
+      "full_graph_replays": null,
+      "piecewise_graph_replays": null,
+      "piecewise_segment_replays": null,
+      "cuda_graph_replays": null,
+      "gpu_feedback_tokens": null,
+      "async_depth": null,
+      "scheduler_ms": 230.847102425106,
+      "cpu_step_ms": -47.24458347597593,
+      "prefill_tokens": 0.0,
+      "decode_tokens": null,
+      "steps": 25.0,
+      "empty_steps": 100.0
+    },
+    "paired_change_pct": {
+      "output_tok_s": {
+        "values": [
+          65.7317075314619,
+          69.38480778694482,
+          85.29108821109655,
+          111.64335079475856,
+          109.06371733872247,
+          99.25609105532749
+        ],
+        "mean": 90.0617937863853,
+        "median": 92.27358963321203
+      },
+      "wall_ms": {
+        "values": [
+          -39.66151589850943,
+          -40.962828185995434,
+          -46.03086367215189,
+          -52.750700825477324,
+          -52.167692570977664,
+          -49.81332843058084
+        ],
+        "mean": -46.897821597282096,
+        "median": -47.92209605136637
+      },
+      "ttft_mean_ms": {
+        "values": [
+          -41.03400257181501,
+          -39.41999033134188,
+          -45.80531849640538,
+          -53.74735776828565,
+          -49.21701909918803,
+          -48.16442994004746
+        ],
+        "mean": -46.2313530345139,
+        "median": -46.98487421822642
+      },
+      "ttft_p95_ms": {
+        "values": [
+          -40.02833983416141,
+          -41.0376164536197,
+          -46.15751759921051,
+          -52.94533671692717,
+          -52.14814954430654,
+          -49.8025429955643
+        ],
+        "mean": -47.0199171906316,
+        "median": -47.9800302973874
+      },
+      "tpot_mean_ms": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "existing_tpot_ms": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "request_max_gap_mean_ms": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "existing_max_gap_mean_ms": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "existing_gap_mean_ms": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "max_token_gap_ms": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "gap_p95_ms": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "kv_peak_blocks": {
+        "values": [
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0
+        ],
+        "mean": 25.0,
+        "median": 25.0
+      },
+      "kv_peak_mib": {
+        "values": [
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0
+        ],
+        "mean": 25.0,
+        "median": 25.0
+      },
+      "forward_count": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "mixed_forward_count": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "eager_count": {
+        "values": [
+          -75.0,
+          -75.0,
+          -75.0,
+          -75.0,
+          -75.0,
+          -75.0
+        ],
+        "mean": -75.0,
+        "median": -75.0
+      },
+      "full_graph_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "piecewise_graph_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "piecewise_segment_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "cuda_graph_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "gpu_feedback_tokens": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "async_depth": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "scheduler_ms": {
+        "values": [
+          293.3777258944156,
+          185.0956482046247,
+          226.59909085437363,
+          227.42745372869072,
+          278.232555162529,
+          226.4681192156151
+        ],
+        "mean": 239.53343217670812,
+        "median": 227.0132722915322
+      },
+      "cpu_step_ms": {
+        "values": [
+          -39.916910457689546,
+          -41.222106389349776,
+          -46.266732529340395,
+          -53.03098742077187,
+          -52.43174727950357,
+          -50.06437904150018
+        ],
+        "mean": -47.15547718635922,
+        "median": -48.16555578542029
+      },
+      "prefill_tokens": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "decode_tokens": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "steps": {
+        "values": [
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0
+        ],
+        "mean": 25.0,
+        "median": 25.0
+      },
+      "empty_steps": {
+        "values": [
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ],
+        "mean": 100.0,
+        "median": 100.0
+      }
+    }
+  },
+  {
+    "budget": 512,
+    "workload": "long_decode",
+    "candidate": "v1_async_auto",
+    "baseline": {
+      "observations": 6,
+      "median": {
+        "output_tok_s": 779.9086834868541,
+        "wall_ms": 261.5885794999997,
+        "ttft_mean_ms": 112.75941499999931,
+        "ttft_p95_ms": 112.75941499999931,
+        "tpot_mean_ms": 5.174927488509976,
+        "existing_tpot_ms": 5.5656035106378425,
+        "request_max_gap_mean_ms": 94.86352029999807,
+        "existing_max_gap_mean_ms": 117.48404249999567,
+        "existing_gap_mean_ms": 5.5656035106378425,
+        "max_token_gap_ms": 117.48404249999567,
+        "gap_p95_ms": 4.01160399999867,
+        "kv_peak_blocks": 16.0,
+        "kv_peak_mib": 448.0,
+        "forward_count": 53.0,
+        "mixed_forward_count": 0.0,
+        "eager_count": 6.0,
+        "full_graph_replays": 47.0,
+        "piecewise_graph_replays": 0.0,
+        "piecewise_segment_replays": 0.0,
+        "cuda_graph_replays": 47.0,
+        "gpu_feedback_tokens": 0.0,
+        "async_depth": 0.0,
+        "scheduler_ms": 0.22278199995184877,
+        "cpu_step_ms": 260.74192899997684,
+        "prefill_tokens": 3000.0,
+        "decode_tokens": 203.0,
+        "steps": 53.0,
+        "empty_steps": 5.0
+      },
+      "range": {
+        "output_tok_s": [
+          755.8023726178376,
+          802.2718135445277
+        ],
+        "wall_ms": [
+          254.2779099999848,
+          269.9118279999766
+        ],
+        "ttft_mean_ms": [
+          102.54137399999763,
+          122.83937099999775
+        ],
+        "ttft_p95_ms": [
+          102.54137399999763,
+          122.83937099999775
+        ],
+        "tpot_mean_ms": [
+          5.048483064680478,
+          5.3354826615597775
+        ],
+        "existing_tpot_ms": [
+          5.409886680851326,
+          5.742314893616802
+        ],
+        "request_max_gap_mean_ms": [
+          86.16549320001923,
+          102.35240800001293
+        ],
+        "existing_max_gap_mean_ms": [
+          106.66867700001603,
+          126.89279900001793
+        ],
+        "existing_gap_mean_ms": [
+          5.409886680851326,
+          5.742314893616802
+        ],
+        "max_token_gap_ms": [
+          106.66867700001603,
+          126.89279900001793
+        ],
+        "gap_p95_ms": [
+          3.9216469999701076,
+          4.136986999981218
+        ],
+        "kv_peak_blocks": [
+          16,
+          16
+        ],
+        "kv_peak_mib": [
+          448.0,
+          448.0
+        ],
+        "forward_count": [
+          53,
+          53
+        ],
+        "mixed_forward_count": [
+          0,
+          0
+        ],
+        "eager_count": [
+          6,
+          6
+        ],
+        "full_graph_replays": [
+          47,
+          47
+        ],
+        "piecewise_graph_replays": [
+          0,
+          0
+        ],
+        "piecewise_segment_replays": [
+          0,
+          0
+        ],
+        "cuda_graph_replays": [
+          47,
+          47
+        ],
+        "gpu_feedback_tokens": [
+          0,
+          0
+        ],
+        "async_depth": [
+          0,
+          0
+        ],
+        "scheduler_ms": [
+          0.20780800002739852,
+          0.27436400000624417
+        ],
+        "cpu_step_ms": [
+          253.46819999998615,
+          269.0791939997439
+        ],
+        "prefill_tokens": [
+          3000,
+          3000
+        ],
+        "decode_tokens": [
+          203,
+          203
+        ],
+        "steps": [
+          53,
+          53
+        ],
+        "empty_steps": [
+          5,
+          5
+        ]
+      }
+    },
+    "optimized": {
+      "observations": 6,
+      "median": {
+        "output_tok_s": 1096.9937644660195,
+        "wall_ms": 185.96314250001456,
+        "ttft_mean_ms": 68.49129099998663,
+        "ttft_p95_ms": 68.49129099998663,
+        "tpot_mean_ms": 3.823692823120175,
+        "existing_tpot_ms": 3.956423393616965,
+        "request_max_gap_mean_ms": 14.255836500007035,
+        "existing_max_gap_mean_ms": 16.902973499981044,
+        "existing_gap_mean_ms": 3.956423393616965,
+        "max_token_gap_ms": 16.902973499981044,
+        "gap_p95_ms": 10.922576500007608,
+        "kv_peak_blocks": 16.0,
+        "kv_peak_mib": 448.0,
+        "forward_count": 47.0,
+        "mixed_forward_count": 6.0,
+        "eager_count": 1.0,
+        "full_graph_replays": 41.0,
+        "piecewise_graph_replays": 5.0,
+        "piecewise_segment_replays": 145.0,
+        "cuda_graph_replays": 186.0,
+        "gpu_feedback_tokens": 199.0,
+        "async_depth": 2.0,
+        "scheduler_ms": 1.3473375000501164,
+        "cpu_step_ms": 185.11107999984233,
+        "prefill_tokens": 3000.0,
+        "decode_tokens": 203.0,
+        "steps": 48.0,
+        "empty_steps": 1.0
+      },
+      "range": {
+        "output_tok_s": [
+          1067.5523024747486,
+          1100.783947030176
+        ],
+        "wall_ms": [
+          185.3224700000169,
+          191.09134000001404
+        ],
+        "ttft_mean_ms": [
+          67.82182099999545,
+          70.6823699999859
+        ],
+        "ttft_p95_ms": [
+          67.82182099999545,
+          70.6823699999859
+        ],
+        "tpot_mean_ms": [
+          3.8120732961706607,
+          3.9292113146101406
+        ],
+        "existing_tpot_ms": [
+          3.942769042553548,
+          4.065223276595444
+        ],
+        "request_max_gap_mean_ms": [
+          12.615184999981466,
+          20.575297000016235
+        ],
+        "existing_max_gap_mean_ms": [
+          14.854878999983612,
+          24.80760100002044
+        ],
+        "existing_gap_mean_ms": [
+          3.942769042553548,
+          4.065223276595444
+        ],
+        "max_token_gap_ms": [
+          14.854878999983612,
+          24.80760100002044
+        ],
+        "gap_p95_ms": [
+          10.62554300000329,
+          12.011374999985946
+        ],
+        "kv_peak_blocks": [
+          16,
+          16
+        ],
+        "kv_peak_mib": [
+          448.0,
+          448.0
+        ],
+        "forward_count": [
+          47,
+          47
+        ],
+        "mixed_forward_count": [
+          6,
+          6
+        ],
+        "eager_count": [
+          1,
+          1
+        ],
+        "full_graph_replays": [
+          41,
+          41
+        ],
+        "piecewise_graph_replays": [
+          5,
+          5
+        ],
+        "piecewise_segment_replays": [
+          145,
+          145
+        ],
+        "cuda_graph_replays": [
+          186,
+          186
+        ],
+        "gpu_feedback_tokens": [
+          199,
+          199
+        ],
+        "async_depth": [
+          2,
+          2
+        ],
+        "scheduler_ms": [
+          1.2450610001337736,
+          1.4210449998586228
+        ],
+        "cpu_step_ms": [
+          184.40924599980235,
+          190.25556200000437
+        ],
+        "prefill_tokens": [
+          3000,
+          3000
+        ],
+        "decode_tokens": [
+          203,
+          203
+        ],
+        "steps": [
+          48,
+          48
+        ],
+        "empty_steps": [
+          1,
+          1
+        ]
+      }
+    },
+    "change_pct": {
+      "output_tok_s": 40.65669323766543,
+      "wall_ms": -28.910068300586968,
+      "ttft_mean_ms": -39.258915984987105,
+      "ttft_p95_ms": -39.258915984987105,
+      "tpot_mean_ms": -26.111180656926724,
+      "existing_tpot_ms": -28.912949223658558,
+      "request_max_gap_mean_ms": -84.97226704751823,
+      "existing_max_gap_mean_ms": -85.61253669835061,
+      "existing_gap_mean_ms": -28.912949223658558,
+      "max_token_gap_ms": -85.61253669835061,
+      "gap_p95_ms": 172.27454404799752,
+      "kv_peak_blocks": 0.0,
+      "kv_peak_mib": 0.0,
+      "forward_count": -11.32075471698113,
+      "mixed_forward_count": null,
+      "eager_count": -83.33333333333334,
+      "full_graph_replays": -12.765957446808507,
+      "piecewise_graph_replays": null,
+      "piecewise_segment_replays": null,
+      "cuda_graph_replays": 295.74468085106383,
+      "gpu_feedback_tokens": null,
+      "async_depth": null,
+      "scheduler_ms": 504.77843826760005,
+      "cpu_step_ms": -29.0060172869785,
+      "prefill_tokens": 0.0,
+      "decode_tokens": 0.0,
+      "steps": -9.433962264150942,
+      "empty_steps": -80.0
+    },
+    "paired_change_pct": {
+      "output_tok_s": {
+        "values": [
+          38.07368193659863,
+          45.48529903944751,
+          36.191235018259384,
+          36.71752938584372,
+          44.288890879883084,
+          39.93462854233061
+        ],
+        "mean": 40.115210800393825,
+        "median": 39.00415523946462
+      },
+      "wall_ms": {
+        "values": [
+          -27.574901605131018,
+          -31.264532801430633,
+          -26.573835690238933,
+          -26.856489837685427,
+          -30.694595134668056,
+          -28.538060205912707
+        ],
+        "mean": -28.583735879177794,
+        "median": -28.056480905521862
+      },
+      "ttft_mean_ms": {
+        "values": [
+          -39.20912432537595,
+          -44.17311089662901,
+          -33.54541260582985,
+          -37.224986702244166,
+          -44.138834771491865,
+          -36.7477811822958
+        ],
+        "mean": -39.173208413977775,
+        "median": -38.21705551381006
+      },
+      "ttft_p95_ms": {
+        "values": [
+          -39.20912432537595,
+          -44.17311089662901,
+          -33.54541260582985,
+          -37.224986702244166,
+          -44.138834771491865,
+          -36.7477811822958
+        ],
+        "mean": -39.173208413977775,
+        "median": -38.21705551381006
+      },
+      "tpot_mean_ms": {
+        "values": [
+          -24.490925037179455,
+          -28.363612533856664,
+          -23.986506732773517,
+          -24.355254508959156,
+          -27.791310133780613,
+          -25.91728867187323
+        ],
+        "mean": -25.81748293640377,
+        "median": -25.204106854526344
+      },
+      "existing_tpot_ms": {
+        "values": [
+          -27.583232893303567,
+          -31.262147225084004,
+          -26.567510514650994,
+          -26.859347212851603,
+          -30.69101552515828,
+          -28.541409453428066
+        ],
+        "mean": -28.584110470746086,
+        "median": -28.062321173365817
+      },
+      "request_max_gap_mean_ms": {
+        "values": [
+          -87.01913617366573,
+          -87.11985736970243,
+          -82.04276047713326,
+          -77.4496812765594,
+          -87.27666162971678,
+          -78.88882024412325
+        ],
+        "mean": -83.29948619515014,
+        "median": -84.53094832539949
+      },
+      "existing_max_gap_mean_ms": {
+        "values": [
+          -87.66796812518324,
+          -87.7742549158793,
+          -82.70719060293804,
+          -78.04744414042436,
+          -87.89534463655461,
+          -79.49507542146647
+        ],
+        "mean": -83.931212973741,
+        "median": -85.18757936406064
+      },
+      "existing_gap_mean_ms": {
+        "values": [
+          -27.583232893303567,
+          -31.262147225084004,
+          -26.567510514650994,
+          -26.859347212851603,
+          -30.69101552515828,
+          -28.541409453428066
+        ],
+        "mean": -28.584110470746086,
+        "median": -28.062321173365817
+      },
+      "max_token_gap_ms": {
+        "values": [
+          -87.66796812518324,
+          -87.7742549158793,
+          -82.70719060293804,
+          -78.04744414042436,
+          -87.89534463655461,
+          -79.49507542146647
+        ],
+        "mean": -83.931212973741,
+        "median": -85.18757936406064
+      },
+      "gap_p95_ms": {
+        "values": [
+          206.28394141740708,
+          172.19688375499734,
+          166.57311226936025,
+          162.10881976766055,
+          168.02385328181097,
+          184.22861304612903
+        ],
+        "mean": 176.5692039228942,
+        "median": 170.11036851840416
+      },
+      "kv_peak_blocks": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "kv_peak_mib": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "forward_count": {
+        "values": [
+          -11.32075471698113,
+          -11.32075471698113,
+          -11.32075471698113,
+          -11.32075471698113,
+          -11.32075471698113,
+          -11.32075471698113
+        ],
+        "mean": -11.32075471698113,
+        "median": -11.32075471698113
+      },
+      "mixed_forward_count": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "eager_count": {
+        "values": [
+          -83.33333333333334,
+          -83.33333333333334,
+          -83.33333333333334,
+          -83.33333333333334,
+          -83.33333333333334,
+          -83.33333333333334
+        ],
+        "mean": -83.33333333333334,
+        "median": -83.33333333333334
+      },
+      "full_graph_replays": {
+        "values": [
+          -12.765957446808507,
+          -12.765957446808507,
+          -12.765957446808507,
+          -12.765957446808507,
+          -12.765957446808507,
+          -12.765957446808507
+        ],
+        "mean": -12.765957446808507,
+        "median": -12.765957446808507
+      },
+      "piecewise_graph_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "piecewise_segment_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "cuda_graph_replays": {
+        "values": [
+          295.74468085106383,
+          295.74468085106383,
+          295.74468085106383,
+          295.74468085106383,
+          295.74468085106383,
+          295.74468085106383
+        ],
+        "mean": 295.74468085106383,
+        "median": 295.74468085106383
+      },
+      "gpu_feedback_tokens": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "async_depth": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "scheduler_ms": {
+        "values": [
+          583.8259353207117,
+          544.7520852966262,
+          397.7460599890972,
+          456.22313967396104,
+          476.46377026557695,
+          448.2562747670493
+        ],
+        "mean": 484.5445442188371,
+        "median": 466.343454969769
+      },
+      "cpu_step_ms": {
+        "values": [
+          -27.668491114940174,
+          -31.371259421803533,
+          -26.682238245343058,
+          -26.930079875006317,
+          -30.831568352491733,
+          -28.648303185302403
+        ],
+        "mean": -28.68865669914787,
+        "median": -28.15839715012129
+      },
+      "prefill_tokens": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "decode_tokens": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "steps": {
+        "values": [
+          -9.433962264150942,
+          -9.433962264150942,
+          -9.433962264150942,
+          -9.433962264150942,
+          -9.433962264150942,
+          -9.433962264150942
+        ],
+        "mean": -9.433962264150942,
+        "median": -9.433962264150942
+      },
+      "empty_steps": {
+        "values": [
+          -80.0,
+          -80.0,
+          -80.0,
+          -80.0,
+          -80.0,
+          -80.0
+        ],
+        "mean": -80.0,
+        "median": -80.0
+      }
+    }
+  },
+  {
+    "budget": 512,
+    "workload": "many_long",
+    "candidate": "v1_async_auto",
+    "baseline": {
+      "observations": 6,
+      "median": {
+        "output_tok_s": 421.2440160952268,
+        "wall_ms": 598.2418984999924,
+        "ttft_mean_ms": 268.13015225000214,
+        "ttft_p95_ms": 413.3453745249795,
+        "tpot_mean_ms": 14.228451000885777,
+        "existing_tpot_ms": 12.728195085106742,
+        "request_max_gap_mean_ms": 302.2234506249823,
+        "existing_max_gap_mean_ms": 436.85410199998387,
+        "existing_gap_mean_ms": 12.728195085106742,
+        "max_token_gap_ms": 436.85410199998387,
+        "gap_p95_ms": 5.603517500020416,
+        "kv_peak_blocks": 52.0,
+        "kv_peak_mib": 1456.0,
+        "forward_count": 71.0,
+        "mixed_forward_count": 0.0,
+        "eager_count": 24.0,
+        "full_graph_replays": 47.0,
+        "piecewise_graph_replays": 0.0,
+        "piecewise_segment_replays": 0.0,
+        "cuda_graph_replays": 47.0,
+        "gpu_feedback_tokens": 0.0,
+        "async_depth": 0.0,
+        "scheduler_ms": 0.42750500003307934,
+        "cpu_step_ms": 595.7807389997072,
+        "prefill_tokens": 12000.0,
+        "decode_tokens": 248.0,
+        "steps": 71.0,
+        "empty_steps": 20.0
+      },
+      "range": {
+        "output_tok_s": [
+          394.58552374882714,
+          440.26759317559964
+        ],
+        "wall_ms": [
+          572.3791709999659,
+          638.6448179999888
+        ],
+        "ttft_mean_ms": [
+          249.02609449999602,
+          295.40877774999785
+        ],
+        "ttft_p95_ms": [
+          387.0732709000066,
+          452.9142311999663
+        ],
+        "tpot_mean_ms": [
+          13.667109362233301,
+          15.06304376205655
+        ],
+        "existing_tpot_ms": [
+          12.17787157446779,
+          13.588612957446312
+        ],
+        "request_max_gap_mean_ms": [
+          283.5423249999991,
+          328.44138162500514
+        ],
+        "existing_max_gap_mean_ms": [
+          408.5982789999889,
+          476.7447520000019
+        ],
+        "existing_gap_mean_ms": [
+          12.17787157446779,
+          13.588612957446312
+        ],
+        "max_token_gap_ms": [
+          408.5982789999889,
+          476.7447520000019
+        ],
+        "gap_p95_ms": [
+          5.443587000002026,
+          5.889488999969217
+        ],
+        "kv_peak_blocks": [
+          52,
+          52
+        ],
+        "kv_peak_mib": [
+          1456.0,
+          1456.0
+        ],
+        "forward_count": [
+          71,
+          71
+        ],
+        "mixed_forward_count": [
+          0,
+          0
+        ],
+        "eager_count": [
+          24,
+          24
+        ],
+        "full_graph_replays": [
+          47,
+          47
+        ],
+        "piecewise_graph_replays": [
+          0,
+          0
+        ],
+        "piecewise_segment_replays": [
+          0,
+          0
+        ],
+        "cuda_graph_replays": [
+          47,
+          47
+        ],
+        "gpu_feedback_tokens": [
+          0,
+          0
+        ],
+        "async_depth": [
+          0,
+          0
+        ],
+        "scheduler_ms": [
+          0.399211000114974,
+          0.49339599985387395
+        ],
+        "cpu_step_ms": [
+          569.8518100000456,
+          636.111519999929
+        ],
+        "prefill_tokens": [
+          12000,
+          12000
+        ],
+        "decode_tokens": [
+          248,
+          248
+        ],
+        "steps": [
+          71,
+          71
+        ],
+        "empty_steps": [
+          20,
+          20
+        ]
+      }
+    },
+    "optimized": {
+      "observations": 6,
+      "median": {
+        "output_tok_s": 668.9477273755535,
+        "wall_ms": 376.71105250001347,
+        "ttft_mean_ms": 185.2369393749953,
+        "ttft_p95_ms": 288.9607466499811,
+        "tpot_mean_ms": 8.378889241223252,
+        "existing_tpot_ms": 8.014942191489062,
+        "request_max_gap_mean_ms": 16.118727812525435,
+        "existing_max_gap_mean_ms": 18.44061950004061,
+        "existing_gap_mean_ms": 8.014942191489062,
+        "max_token_gap_ms": 18.44061950004061,
+        "gap_p95_ms": 13.88324474998512,
+        "kv_peak_blocks": 49.0,
+        "kv_peak_mib": 1372.0,
+        "forward_count": 47.0,
+        "mixed_forward_count": 24.0,
+        "eager_count": 1.0,
+        "full_graph_replays": 23.0,
+        "piecewise_graph_replays": 23.0,
+        "piecewise_segment_replays": 667.0,
+        "cuda_graph_replays": 690.0,
+        "gpu_feedback_tokens": 244.0,
+        "async_depth": 2.0,
+        "scheduler_ms": 2.6157424998700662,
+        "cpu_step_ms": 374.03374149994306,
+        "prefill_tokens": 12000.0,
+        "decode_tokens": 248.0,
+        "steps": 48.0,
+        "empty_steps": 1.0
+      },
+      "range": {
+        "output_tok_s": [
+          657.6021825001653,
+          671.4513526235104
+        ],
+        "wall_ms": [
+          375.30641499995454,
+          383.2104070000355
+        ],
+        "ttft_mean_ms": [
+          184.35592250000354,
+          189.03686775000494
+        ],
+        "ttft_p95_ms": [
+          287.8703789499667,
+          294.9825586000088
+        ],
+        "tpot_mean_ms": [
+          8.34343308936169,
+          8.511795886701776
+        ],
+        "existing_tpot_ms": [
+          7.985025978723086,
+          8.153039723404067
+        ],
+        "request_max_gap_mean_ms": [
+          13.706712875006133,
+          21.71086449999393
+        ],
+        "existing_max_gap_mean_ms": [
+          15.204831999994894,
+          25.921853999989253
+        ],
+        "existing_gap_mean_ms": [
+          7.985025978723086,
+          8.153039723404067
+        ],
+        "max_token_gap_ms": [
+          15.204831999994894,
+          25.921853999989253
+        ],
+        "gap_p95_ms": [
+          13.573513000039839,
+          14.109571999995296
+        ],
+        "kv_peak_blocks": [
+          49,
+          49
+        ],
+        "kv_peak_mib": [
+          1372.0,
+          1372.0
+        ],
+        "forward_count": [
+          47,
+          47
+        ],
+        "mixed_forward_count": [
+          24,
+          24
+        ],
+        "eager_count": [
+          1,
+          1
+        ],
+        "full_graph_replays": [
+          23,
+          23
+        ],
+        "piecewise_graph_replays": [
+          23,
+          23
+        ],
+        "piecewise_segment_replays": [
+          667,
+          667
+        ],
+        "cuda_graph_replays": [
+          690,
+          690
+        ],
+        "gpu_feedback_tokens": [
+          244,
+          244
+        ],
+        "async_depth": [
+          2,
+          2
+        ],
+        "scheduler_ms": [
+          2.277972000115369,
+          2.9870230001733944
+        ],
+        "cpu_step_ms": [
+          372.9810099999895,
+          380.9605650000094
+        ],
+        "prefill_tokens": [
+          12000,
+          12000
+        ],
+        "decode_tokens": [
+          248,
+          248
+        ],
+        "steps": [
+          48,
+          48
+        ],
+        "empty_steps": [
+          1,
+          1
+        ]
+      }
+    },
+    "change_pct": {
+      "output_tok_s": 58.802903261735736,
+      "wall_ms": -37.03031274730782,
+      "ttft_mean_ms": -30.91528952615443,
+      "ttft_p95_ms": -30.092178488253897,
+      "tpot_mean_ms": -41.11172579009737,
+      "existing_tpot_ms": -37.03001770559485,
+      "request_max_gap_mean_ms": -94.66661909286233,
+      "existing_max_gap_mean_ms": -95.7787692926273,
+      "existing_gap_mean_ms": -37.03001770559485,
+      "max_token_gap_ms": -95.7787692926273,
+      "gap_p95_ms": 147.7594609088762,
+      "kv_peak_blocks": -5.769230769230771,
+      "kv_peak_mib": -5.769230769230771,
+      "forward_count": -33.80281690140845,
+      "mixed_forward_count": null,
+      "eager_count": -95.83333333333334,
+      "full_graph_replays": -51.06382978723405,
+      "piecewise_graph_replays": null,
+      "piecewise_segment_replays": null,
+      "cuda_graph_replays": 1368.0851063829787,
+      "gpu_feedback_tokens": null,
+      "async_depth": null,
+      "scheduler_ms": 511.8624342797549,
+      "cpu_step_ms": -37.21956467946056,
+      "prefill_tokens": 0.0,
+      "decode_tokens": 0.0,
+      "steps": -32.3943661971831,
+      "empty_steps": -95.0
+    },
+    "paired_change_pct": {
+      "output_tok_s": {
+        "values": [
+          59.811638801975754,
+          52.50982880216297,
+          54.85650732861589,
+          65.21760775616991,
+          58.05897424329585,
+          69.19013995469795
+        ],
+        "mean": 59.94078281448639,
+        "median": 58.9353065226358
+      },
+      "wall_ms": {
+        "values": [
+          -37.426334683976904,
+          -34.43045554151081,
+          -35.42408922616775,
+          -39.47376350613842,
+          -36.73247566058936,
+          -40.89490083359715
+        ],
+        "mean": -37.39700324199673,
+        "median": -37.07940517228313
+      },
+      "ttft_mean_ms": {
+        "values": [
+          -32.20958044497567,
+          -25.745442010296017,
+          -27.631258364833556,
+          -37.12200670611329,
+          -29.773929237470178,
+          -36.99184248427444
+        ],
+        "mean": -31.579009874660525,
+        "median": -30.991754841222924
+      },
+      "ttft_p95_ms": {
+        "values": [
+          -31.326786488845038,
+          -25.41932876718953,
+          -27.153011229689284,
+          -34.141787012990385,
+          -29.05750415660082,
+          -35.79130494983114
+        ],
+        "mean": -30.481620434191033,
+        "median": -30.19214532272293
+      },
+      "tpot_mean_ms": {
+        "values": [
+          -41.49359150095273,
+          -38.95246706361092,
+          -39.88306434643687,
+          -42.00430530370134,
+          -40.80675960172704,
+          -44.20664499179134
+        ],
+        "mean": -41.224472134703376,
+        "median": -41.150175551339885
+      },
+      "existing_tpot_ms": {
+        "values": [
+          -37.42684980031754,
+          -34.430036235030215,
+          -35.42356119069557,
+          -39.47368224460257,
+          -36.73206063171062,
+          -40.89829756065583
+        ],
+        "mean": -37.397414610502054,
+        "median": -37.07945521601408
+      },
+      "request_max_gap_mean_ms": {
+        "values": [
+          -95.17969815025053,
+          -94.24505045233713,
+          -94.64459071347746,
+          -93.09673341175832,
+          -94.37825784252439,
+          -95.82673997801663
+        ],
+        "mean": -94.56184509139408,
+        "median": -94.51142427800093
+      },
+      "existing_max_gap_mean_ms": {
+        "values": [
+          -96.23162415213578,
+          -95.41351445583618,
+          -95.76617748504032,
+          -94.38635182904791,
+          -95.51007017528494,
+          -96.81069756170177
+        ],
+        "mean": -95.68640594317448,
+        "median": -95.63812383016263
+      },
+      "existing_gap_mean_ms": {
+        "values": [
+          -37.42684980031754,
+          -34.430036235030215,
+          -35.42356119069557,
+          -39.47368224460257,
+          -36.73206063171062,
+          -40.89829756065583
+        ],
+        "mean": -37.397414610502054,
+        "median": -37.07945521601408
+      },
+      "max_token_gap_ms": {
+        "values": [
+          -96.23162415213578,
+          -95.41351445583618,
+          -95.76617748504032,
+          -94.38635182904791,
+          -95.51007017528494,
+          -96.81069756170177
+        ],
+        "mean": -95.68640594317448,
+        "median": -95.63812383016263
+      },
+      "gap_p95_ms": {
+        "values": [
+          142.895933771592,
+          143.1847723407498,
+          139.5720919093158,
+          155.14487965336596,
+          152.90564033798398,
+          149.65879041742016
+        ],
+        "mean": 147.22701807173794,
+        "median": 146.42178137908496
+      },
+      "kv_peak_blocks": {
+        "values": [
+          -5.769230769230771,
+          -5.769230769230771,
+          -5.769230769230771,
+          -5.769230769230771,
+          -5.769230769230771,
+          -5.769230769230771
+        ],
+        "mean": -5.769230769230771,
+        "median": -5.769230769230771
+      },
+      "kv_peak_mib": {
+        "values": [
+          -5.769230769230771,
+          -5.769230769230771,
+          -5.769230769230771,
+          -5.769230769230771,
+          -5.769230769230771,
+          -5.769230769230771
+        ],
+        "mean": -5.769230769230771,
+        "median": -5.769230769230771
+      },
+      "forward_count": {
+        "values": [
+          -33.80281690140845,
+          -33.80281690140845,
+          -33.80281690140845,
+          -33.80281690140845,
+          -33.80281690140845,
+          -33.80281690140845
+        ],
+        "mean": -33.80281690140845,
+        "median": -33.80281690140845
+      },
+      "mixed_forward_count": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "eager_count": {
+        "values": [
+          -95.83333333333334,
+          -95.83333333333334,
+          -95.83333333333334,
+          -95.83333333333334,
+          -95.83333333333334,
+          -95.83333333333334
+        ],
+        "mean": -95.83333333333334,
+        "median": -95.83333333333334
+      },
+      "full_graph_replays": {
+        "values": [
+          -51.06382978723405,
+          -51.06382978723405,
+          -51.06382978723405,
+          -51.06382978723405,
+          -51.06382978723405,
+          -51.06382978723405
+        ],
+        "mean": -51.06382978723405,
+        "median": -51.06382978723405
+      },
+      "piecewise_graph_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "piecewise_segment_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "cuda_graph_replays": {
+        "values": [
+          1368.0851063829787,
+          1368.0851063829787,
+          1368.0851063829787,
+          1368.0851063829787,
+          1368.0851063829787,
+          1368.0851063829787
+        ],
+        "mean": 1368.0851063829787,
+        "median": 1368.0851063829787
+      },
+      "gpu_feedback_tokens": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "async_depth": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "scheduler_ms": {
+        "values": [
+          637.6279709535314,
+          601.4260890405535,
+          514.0264508725082,
+          487.4093577208593,
+          481.4432008234094,
+          361.6924338239512
+        ],
+        "mean": 513.9375838724688,
+        "median": 500.71790429668374
+      },
+      "cpu_step_ms": {
+        "values": [
+          -37.568035959603954,
+          -34.54771864285916,
+          -35.530458949609255,
+          -39.722625840545625,
+          -36.867729422537266,
+          -41.03313991234573
+        ],
+        "mean": -37.5449514545835,
+        "median": -37.21788269107061
+      },
+      "prefill_tokens": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "decode_tokens": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "steps": {
+        "values": [
+          -32.3943661971831,
+          -32.3943661971831,
+          -32.3943661971831,
+          -32.3943661971831,
+          -32.3943661971831,
+          -32.3943661971831
+        ],
+        "mean": -32.3943661971831,
+        "median": -32.3943661971831
+      },
+      "empty_steps": {
+        "values": [
+          -95.0,
+          -95.0,
+          -95.0,
+          -95.0,
+          -95.0,
+          -95.0
+        ],
+        "mean": -95.0,
+        "median": -95.0
+      }
+    }
+  },
+  {
+    "budget": 512,
+    "workload": "capacity_pressure",
+    "candidate": "v1_async_auto",
+    "baseline": {
+      "observations": 6,
+      "median": {
+        "output_tok_s": 280.3883495515111,
+        "wall_ms": 1184.119046500001,
+        "ttft_mean_ms": 577.2499225000004,
+        "ttft_p95_ms": 1012.8937715999939,
+        "tpot_mean_ms": 20.29640333295155,
+        "existing_tpot_ms": 25.19324884042483,
+        "request_max_gap_mean_ms": 306.1741717307576,
+        "existing_max_gap_mean_ms": 548.2311610000181,
+        "existing_gap_mean_ms": 25.19324884042483,
+        "max_token_gap_ms": 548.2311610000181,
+        "gap_p95_ms": 6.072762499996998,
+        "kv_peak_blocks": 64.0,
+        "kv_peak_mib": 1792.0,
+        "forward_count": 101.0,
+        "mixed_forward_count": 0.0,
+        "eager_count": 54.0,
+        "full_graph_replays": 47.0,
+        "piecewise_graph_replays": 0.0,
+        "piecewise_segment_replays": 0.0,
+        "cuda_graph_replays": 47.0,
+        "gpu_feedback_tokens": 0.0,
+        "async_depth": 0.0,
+        "scheduler_ms": 0.9713154997825768,
+        "cpu_step_ms": 1178.9744899996606,
+        "prefill_tokens": 27000.0,
+        "decode_tokens": 323.0,
+        "steps": 101.0,
+        "empty_steps": 45.0
+      },
+      "range": {
+        "output_tok_s": [
+          230.81246136568353,
+          282.79433924778596
+        ],
+        "wall_ms": [
+          1173.998040000015,
+          1438.3972079999694
+        ],
+        "ttft_mean_ms": [
+          565.3681138888878,
+          749.1211907777837
+        ],
+        "ttft_p95_ms": [
+          1001.9754858000056,
+          1268.6971826000217
+        ],
+        "tpot_mean_ms": [
+          20.11234392165922,
+          24.294276743153063
+        ],
+        "existing_tpot_ms": [
+          24.978588978723458,
+          30.601690531914592
+        ],
+        "request_max_gap_mean_ms": [
+          298.70825153847136,
+          403.1137823076803
+        ],
+        "existing_max_gap_mean_ms": [
+          529.6648810000306,
+          747.1351109999773
+        ],
+        "existing_gap_mean_ms": [
+          24.978588978723458,
+          30.601690531914592
+        ],
+        "max_token_gap_ms": [
+          529.6648810000306,
+          747.1351109999773
+        ],
+        "gap_p95_ms": [
+          5.750130000024001,
+          6.4043780000133665
+        ],
+        "kv_peak_blocks": [
+          64,
+          64
+        ],
+        "kv_peak_mib": [
+          1792.0,
+          1792.0
+        ],
+        "forward_count": [
+          101,
+          101
+        ],
+        "mixed_forward_count": [
+          0,
+          0
+        ],
+        "eager_count": [
+          54,
+          54
+        ],
+        "full_graph_replays": [
+          47,
+          47
+        ],
+        "piecewise_graph_replays": [
+          0,
+          0
+        ],
+        "piecewise_segment_replays": [
+          0,
+          0
+        ],
+        "cuda_graph_replays": [
+          47,
+          47
+        ],
+        "gpu_feedback_tokens": [
+          0,
+          0
+        ],
+        "async_depth": [
+          0,
+          0
+        ],
+        "scheduler_ms": [
+          0.9343459996102865,
+          1.1764989997118391
+        ],
+        "cpu_step_ms": [
+          1168.7731649999478,
+          1432.637737999869
+        ],
+        "prefill_tokens": [
+          27000,
+          27000
+        ],
+        "decode_tokens": [
+          323,
+          323
+        ],
+        "steps": [
+          101,
+          101
+        ],
+        "empty_steps": [
+          45,
+          45
+        ]
+      }
+    },
+    "optimized": {
+      "observations": 6,
+      "median": {
+        "output_tok_s": 444.31824411209936,
+        "wall_ms": 747.2121724999852,
+        "ttft_mean_ms": 383.2203649999902,
+        "ttft_p95_ms": 664.0700132999882,
+        "tpot_mean_ms": 11.707679174795809,
+        "existing_tpot_ms": 13.010740968084935,
+        "request_max_gap_mean_ms": 13.998646076915888,
+        "existing_max_gap_mean_ms": 14.523221999979796,
+        "existing_gap_mean_ms": 13.010740968084935,
+        "max_token_gap_ms": 16.45602049998729,
+        "gap_p95_ms": 14.239533500017387,
+        "kv_peak_blocks": 49.0,
+        "kv_peak_mib": 1372.0,
+        "forward_count": 69.0,
+        "mixed_forward_count": 54.0,
+        "eager_count": 1.0,
+        "full_graph_replays": 15.0,
+        "piecewise_graph_replays": 53.0,
+        "piecewise_segment_replays": 1537.0,
+        "cuda_graph_replays": 1552.0,
+        "gpu_feedback_tokens": 319.0,
+        "async_depth": 2.0,
+        "scheduler_ms": 4.3651915000282315,
+        "cpu_step_ms": 742.2450724998555,
+        "prefill_tokens": 27000.0,
+        "decode_tokens": 323.0,
+        "steps": 70.0,
+        "empty_steps": 1.0
+      },
+      "range": {
+        "output_tok_s": [
+          438.19959803212737,
+          444.778190636867
+        ],
+        "wall_ms": [
+          746.439477000024,
+          757.6456059999828
+        ],
+        "ttft_mean_ms": [
+          382.2511862222263,
+          386.1966288888918
+        ],
+        "ttft_p95_ms": [
+          663.2555895999985,
+          671.9729844000199
+        ],
+        "tpot_mean_ms": [
+          11.686722161048246,
+          11.84085434206223
+        ],
+        "existing_tpot_ms": [
+          12.982415595745158,
+          13.124849361702218
+        ],
+        "request_max_gap_mean_ms": [
+          13.680263153831289,
+          14.330135000009774
+        ],
+        "existing_max_gap_mean_ms": [
+          14.447601000028953,
+          16.034061000027577
+        ],
+        "existing_gap_mean_ms": [
+          12.982415595745158,
+          13.124849361702218
+        ],
+        "max_token_gap_ms": [
+          14.876306999951794,
+          17.790100000013354
+        ],
+        "gap_p95_ms": [
+          13.94712499995876,
+          14.551519999997709
+        ],
+        "kv_peak_blocks": [
+          49,
+          49
+        ],
+        "kv_peak_mib": [
+          1372.0,
+          1372.0
+        ],
+        "forward_count": [
+          69,
+          69
+        ],
+        "mixed_forward_count": [
+          54,
+          54
+        ],
+        "eager_count": [
+          1,
+          1
+        ],
+        "full_graph_replays": [
+          15,
+          15
+        ],
+        "piecewise_graph_replays": [
+          53,
+          53
+        ],
+        "piecewise_segment_replays": [
+          1537,
+          1537
+        ],
+        "cuda_graph_replays": [
+          1552,
+          1552
+        ],
+        "gpu_feedback_tokens": [
+          319,
+          319
+        ],
+        "async_depth": [
+          2,
+          2
+        ],
+        "scheduler_ms": [
+          4.205732999935208,
+          4.733824999789249
+        ],
+        "cpu_step_ms": [
+          741.6137840000943,
+          752.687531999868
+        ],
+        "prefill_tokens": [
+          27000,
+          27000
+        ],
+        "decode_tokens": [
+          323,
+          323
+        ],
+        "steps": [
+          70,
+          70
+        ],
+        "empty_steps": [
+          1,
+          1
+        ]
+      }
+    },
+    "change_pct": {
+      "output_tok_s": 58.46530172269948,
+      "wall_ms": -36.8972085443113,
+      "ttft_mean_ms": -33.61274725853429,
+      "ttft_p95_ms": -34.43833579398898,
+      "tpot_mean_ms": -42.31648345405022,
+      "existing_tpot_ms": -48.35623999708988,
+      "request_max_gap_mean_ms": -95.42788145786967,
+      "existing_max_gap_mean_ms": -97.3508944705937,
+      "existing_gap_mean_ms": -48.35623999708988,
+      "max_token_gap_ms": -96.99834273010491,
+      "gap_p95_ms": 134.48197587217393,
+      "kv_peak_blocks": -23.4375,
+      "kv_peak_mib": -23.4375,
+      "forward_count": -31.68316831683168,
+      "mixed_forward_count": null,
+      "eager_count": -98.14814814814815,
+      "full_graph_replays": -68.08510638297872,
+      "piecewise_graph_replays": null,
+      "piecewise_segment_replays": null,
+      "cuda_graph_replays": 3202.127659574468,
+      "gpu_feedback_tokens": null,
+      "async_depth": null,
+      "scheduler_ms": 349.41025866521784,
+      "cpu_step_ms": -37.043160916902515,
+      "prefill_tokens": 0.0,
+      "decode_tokens": 0.0,
+      "steps": -30.6930693069307,
+      "empty_steps": -97.77777777777777
+    },
+    "paired_change_pct": {
+      "output_tok_s": {
+        "values": [
+          92.70111674438182,
+          57.11121655810876,
+          55.13896242408158,
+          57.04218672956745,
+          59.48903006338819,
+          62.936401091883035
+        ],
+        "mean": 64.06981893523513,
+        "median": 58.300123310748475
+      },
+      "wall_ms": {
+        "values": [
+          -48.10616477503341,
+          -36.35082065384285,
+          -35.54165991735586,
+          -36.3228428726583,
+          -37.29976289889314,
+          -38.62636014428229
+        ],
+        "mean": -38.70793521034431,
+        "median": -36.825291776368
+      },
+      "ttft_mean_ms": {
+        "values": [
+          -48.97338495719903,
+          -33.575681672589916,
+          -31.691119572974134,
+          -32.93317108286057,
+          -33.64974552309182,
+          -36.619071048401544
+        ],
+        "mean": -36.240362309519504,
+        "median": -33.612713597840866
+      },
+      "ttft_p95_ms": {
+        "values": [
+          -47.72152104564884,
+          -33.898825769450866,
+          -32.93518714547217,
+          -34.08998041796119,
+          -34.59236940061676,
+          -36.67763601538546
+        ],
+        "mean": -36.65258663242255,
+        "median": -34.34117490928898
+      },
+      "tpot_mean_ms": {
+        "values": [
+          -51.86489481044906,
+          -41.89278879393725,
+          -41.151489919956305,
+          -42.10742957241348,
+          -42.4289863177165,
+          -43.109156873213486
+        ],
+        "mean": -43.75912438128101,
+        "median": -42.26820794506499
+      },
+      "existing_tpot_ms": {
+        "values": [
+          -57.576148996717166,
+          -47.993896955230056,
+          -47.518202625433645,
+          -47.87233192191921,
+          -48.66870320317936,
+          -49.78257507815028
+        ],
+        "mean": -49.90197646343829,
+        "median": -48.33130007920471
+      },
+      "request_max_gap_mean_ms": {
+        "values": [
+          -96.59661807223368,
+          -95.4960122431948,
+          -95.2026316895487,
+          -95.38053270967197,
+          -95.45458449345236,
+          -95.52412694220146
+        ],
+        "mean": -95.60908435838383,
+        "median": -95.47529836832358
+      },
+      "existing_max_gap_mean_ms": {
+        "values": [
+          -98.06440484630947,
+          -97.3488195041477,
+          -96.97279136767487,
+          -97.28333350692772,
+          -97.35608460231681,
+          -97.47016592754025
+        ],
+        "mean": -97.41593329248613,
+        "median": -97.35245205323226
+      },
+      "existing_gap_mean_ms": {
+        "values": [
+          -57.576148996717166,
+          -47.993896955230056,
+          -47.518202625433645,
+          -47.87233192191921,
+          -48.66870320317936,
+          -49.78257507815028
+        ],
+        "mean": -49.90197646343829,
+        "median": -48.33130007920471
+      },
+      "max_token_gap_ms": {
+        "values": [
+          -97.8422473040492,
+          -97.29376320233949,
+          -96.97279136767487,
+          -96.91507316773593,
+          -96.92729439035374,
+          -96.89030105523481
+        ],
+        "mean": -97.14024508123134,
+        "median": -96.9500428790143
+      },
+      "gap_p95_ms": {
+        "values": [
+          126.50063544024195,
+          127.21207274098028,
+          149.24158236363186,
+          124.54099905201433,
+          137.69919370890827,
+          137.7519304917465
+        ],
+        "mean": 133.8244022995872,
+        "median": 132.45563322494428
+      },
+      "kv_peak_blocks": {
+        "values": [
+          -23.4375,
+          -23.4375,
+          -23.4375,
+          -23.4375,
+          -23.4375,
+          -23.4375
+        ],
+        "mean": -23.4375,
+        "median": -23.4375
+      },
+      "kv_peak_mib": {
+        "values": [
+          -23.4375,
+          -23.4375,
+          -23.4375,
+          -23.4375,
+          -23.4375,
+          -23.4375
+        ],
+        "mean": -23.4375,
+        "median": -23.4375
+      },
+      "forward_count": {
+        "values": [
+          -31.68316831683168,
+          -31.68316831683168,
+          -31.68316831683168,
+          -31.68316831683168,
+          -31.68316831683168,
+          -31.68316831683168
+        ],
+        "mean": -31.68316831683168,
+        "median": -31.68316831683168
+      },
+      "mixed_forward_count": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "eager_count": {
+        "values": [
+          -98.14814814814815,
+          -98.14814814814815,
+          -98.14814814814815,
+          -98.14814814814815,
+          -98.14814814814815,
+          -98.14814814814815
+        ],
+        "mean": -98.14814814814815,
+        "median": -98.14814814814815
+      },
+      "full_graph_replays": {
+        "values": [
+          -68.08510638297872,
+          -68.08510638297872,
+          -68.08510638297872,
+          -68.08510638297872,
+          -68.08510638297872,
+          -68.08510638297872
+        ],
+        "mean": -68.08510638297872,
+        "median": -68.08510638297872
+      },
+      "piecewise_graph_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "piecewise_segment_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "cuda_graph_replays": {
+        "values": [
+          3202.127659574468,
+          3202.127659574468,
+          3202.127659574468,
+          3202.127659574468,
+          3202.127659574468,
+          3202.127659574468
+        ],
+        "mean": 3202.127659574468,
+        "median": 3202.127659574468
+      },
+      "gpu_feedback_tokens": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "async_depth": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "scheduler_ms": {
+        "values": [
+          268.65046218610985,
+          356.8806587008602,
+          406.64582518293184,
+          365.23695968177464,
+          327.2607857007745,
+          341.6187109877681
+        ],
+        "mean": 344.3822337400365,
+        "median": 349.2496848443142
+      },
+      "cpu_step_ms": {
+        "values": [
+          -48.234381635410884,
+          -36.49980019863518,
+          -35.68695750995151,
+          -36.46338912403368,
+          -37.44534533678393,
+          -38.785670430412914
+        ],
+        "mean": -38.85259070587135,
+        "median": -36.97257276770955
+      },
+      "prefill_tokens": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "decode_tokens": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "steps": {
+        "values": [
+          -30.6930693069307,
+          -30.6930693069307,
+          -30.6930693069307,
+          -30.6930693069307,
+          -30.6930693069307,
+          -30.6930693069307
+        ],
+        "mean": -30.6930693069307,
+        "median": -30.6930693069307
+      },
+      "empty_steps": {
+        "values": [
+          -97.77777777777777,
+          -97.77777777777777,
+          -97.77777777777777,
+          -97.77777777777777,
+          -97.77777777777777,
+          -97.77777777777777
+        ],
+        "mean": -97.77777777777777,
+        "median": -97.77777777777777
+      }
+    }
+  },
+  {
+    "budget": 1024,
+    "workload": "all_decode",
+    "candidate": "v1_async_auto",
+    "baseline": {
+      "observations": 6,
+      "median": {
+        "output_tok_s": 1320.4044158346048,
+        "wall_ms": 142.38393549999273,
+        "ttft_mean_ms": null,
+        "ttft_p95_ms": null,
+        "tpot_mean_ms": 3.0293992446805786,
+        "existing_tpot_ms": 3.0293992446805786,
+        "request_max_gap_mean_ms": 3.709507999985817,
+        "existing_max_gap_mean_ms": 3.709507999985817,
+        "existing_gap_mean_ms": 3.0293992446805786,
+        "max_token_gap_ms": 3.709507999985817,
+        "gap_p95_ms": 3.437131499993029,
+        "kv_peak_blocks": 4.0,
+        "kv_peak_mib": 112.0,
+        "forward_count": 47.0,
+        "mixed_forward_count": 0.0,
+        "eager_count": 0.0,
+        "full_graph_replays": 47.0,
+        "piecewise_graph_replays": 0.0,
+        "piecewise_segment_replays": 0.0,
+        "cuda_graph_replays": 47.0,
+        "gpu_feedback_tokens": 0.0,
+        "async_depth": 0.0,
+        "scheduler_ms": 0.16199300000607764,
+        "cpu_step_ms": 142.13067349996322,
+        "prefill_tokens": 0.0,
+        "decode_tokens": 188.0,
+        "steps": 47.0,
+        "empty_steps": 0.0
+      },
+      "range": {
+        "output_tok_s": [
+          1306.2075073069268,
+          1341.5229120802542
+        ],
+        "wall_ms": [
+          140.1392390000069,
+          143.92812699998103
+        ],
+        "ttft_mean_ms": null,
+        "ttft_p95_ms": null,
+        "tpot_mean_ms": [
+          2.9817980425530144,
+          3.0623592340434502
+        ],
+        "existing_tpot_ms": [
+          2.9817980425530144,
+          3.0623592340434502
+        ],
+        "request_max_gap_mean_ms": [
+          3.6350920000245424,
+          3.8120390000244697
+        ],
+        "existing_max_gap_mean_ms": [
+          3.6350920000245424,
+          3.8120390000244697
+        ],
+        "existing_gap_mean_ms": [
+          2.9817980425530144,
+          3.0623592340434502
+        ],
+        "max_token_gap_ms": [
+          3.6350920000245424,
+          3.8120390000244697
+        ],
+        "gap_p95_ms": [
+          3.3579309999822726,
+          3.6224030000084895
+        ],
+        "kv_peak_blocks": [
+          4,
+          4
+        ],
+        "kv_peak_mib": [
+          112.0,
+          112.0
+        ],
+        "forward_count": [
+          47,
+          47
+        ],
+        "mixed_forward_count": [
+          0,
+          0
+        ],
+        "eager_count": [
+          0,
+          0
+        ],
+        "full_graph_replays": [
+          47,
+          47
+        ],
+        "piecewise_graph_replays": [
+          0,
+          0
+        ],
+        "piecewise_segment_replays": [
+          0,
+          0
+        ],
+        "cuda_graph_replays": [
+          47,
+          47
+        ],
+        "gpu_feedback_tokens": [
+          0,
+          0
+        ],
+        "async_depth": [
+          0,
+          0
+        ],
+        "scheduler_ms": [
+          0.15087700029425832,
+          0.20484699996359268
+        ],
+        "cpu_step_ms": [
+          139.88657400017246,
+          143.67975700008628
+        ],
+        "prefill_tokens": [
+          0,
+          0
+        ],
+        "decode_tokens": [
+          188,
+          188
+        ],
+        "steps": [
+          47,
+          47
+        ],
+        "empty_steps": [
+          0,
+          0
+        ]
+      }
+    },
+    "optimized": {
+      "observations": 6,
+      "median": {
+        "output_tok_s": 1513.3902284536475,
+        "wall_ms": 124.22508700004187,
+        "ttft_mean_ms": null,
+        "ttft_p95_ms": null,
+        "tpot_mean_ms": 2.642808010638143,
+        "existing_tpot_ms": 2.642808010638143,
+        "request_max_gap_mean_ms": 3.319134999998141,
+        "existing_max_gap_mean_ms": 3.319134999998141,
+        "existing_gap_mean_ms": 2.642808010638143,
+        "max_token_gap_ms": 3.319134999998141,
+        "gap_p95_ms": 3.0450389999998606,
+        "kv_peak_blocks": 4.0,
+        "kv_peak_mib": 112.0,
+        "forward_count": 47.0,
+        "mixed_forward_count": 0.0,
+        "eager_count": 0.0,
+        "full_graph_replays": 47.0,
+        "piecewise_graph_replays": 0.0,
+        "piecewise_segment_replays": 0.0,
+        "cuda_graph_replays": 47.0,
+        "gpu_feedback_tokens": 184.0,
+        "async_depth": 2.0,
+        "scheduler_ms": 0.993375499689364,
+        "cpu_step_ms": 123.95883099992488,
+        "prefill_tokens": 0.0,
+        "decode_tokens": 188.0,
+        "steps": 48.0,
+        "empty_steps": 1.0
+      },
+      "range": {
+        "output_tok_s": [
+          1484.4090425868624,
+          1544.043876207711
+        ],
+        "wall_ms": [
+          121.75819800000909,
+          126.64972700002863
+        ],
+        "ttft_mean_ms": null,
+        "ttft_p95_ms": null,
+        "tpot_mean_ms": [
+          2.5904730638294593,
+          2.6945988936162433
+        ],
+        "existing_tpot_ms": [
+          2.5904730638294593,
+          2.6945988936162433
+        ],
+        "request_max_gap_mean_ms": [
+          2.9819410000300195,
+          3.90625799997224
+        ],
+        "existing_max_gap_mean_ms": [
+          2.9819410000300195,
+          3.90625799997224
+        ],
+        "existing_gap_mean_ms": [
+          2.5904730638294593,
+          2.6945988936162433
+        ],
+        "max_token_gap_ms": [
+          2.9819410000300195,
+          3.90625799997224
+        ],
+        "gap_p95_ms": [
+          2.8575110000019777,
+          3.1952799999999115
+        ],
+        "kv_peak_blocks": [
+          4,
+          4
+        ],
+        "kv_peak_mib": [
+          112.0,
+          112.0
+        ],
+        "forward_count": [
+          47,
+          47
+        ],
+        "mixed_forward_count": [
+          0,
+          0
+        ],
+        "eager_count": [
+          0,
+          0
+        ],
+        "full_graph_replays": [
+          47,
+          47
+        ],
+        "piecewise_graph_replays": [
+          0,
+          0
+        ],
+        "piecewise_segment_replays": [
+          0,
+          0
+        ],
+        "cuda_graph_replays": [
+          47,
+          47
+        ],
+        "gpu_feedback_tokens": [
+          184,
+          184
+        ],
+        "async_depth": [
+          2,
+          2
+        ],
+        "scheduler_ms": [
+          0.9076429999481661,
+          1.0698199996568292
+        ],
+        "cpu_step_ms": [
+          121.49752699968985,
+          126.41623199976948
+        ],
+        "prefill_tokens": [
+          0,
+          0
+        ],
+        "decode_tokens": [
+          188,
+          188
+        ],
+        "steps": [
+          48,
+          48
+        ],
+        "empty_steps": [
+          1,
+          1
+        ]
+      }
+    },
+    "change_pct": {
+      "output_tok_s": 14.615659437723071,
+      "wall_ms": -12.753439098438035,
+      "ttft_mean_ms": null,
+      "ttft_p95_ms": null,
+      "tpot_mean_ms": -12.761316776627051,
+      "existing_tpot_ms": -12.761316776627051,
+      "request_max_gap_mean_ms": -10.523578867849015,
+      "existing_max_gap_mean_ms": -10.523578867849015,
+      "existing_gap_mean_ms": -12.761316776627051,
+      "max_token_gap_ms": -10.523578867849015,
+      "gap_p95_ms": -11.407550161929036,
+      "kv_peak_blocks": 0.0,
+      "kv_peak_mib": 0.0,
+      "forward_count": 0.0,
+      "mixed_forward_count": null,
+      "eager_count": null,
+      "full_graph_replays": 0.0,
+      "piecewise_graph_replays": null,
+      "piecewise_segment_replays": null,
+      "cuda_graph_replays": 0.0,
+      "gpu_feedback_tokens": null,
+      "async_depth": null,
+      "scheduler_ms": 513.2212500861732,
+      "cpu_step_ms": -12.785306684727027,
+      "prefill_tokens": null,
+      "decode_tokens": 0.0,
+      "steps": 2.127659574468077,
+      "empty_steps": null
+    },
+    "paired_change_pct": {
+      "output_tok_s": {
+        "values": [
+          10.6510391451339,
+          15.725458597373422,
+          16.375661210065793,
+          14.647254808909182,
+          15.441324201097517,
+          13.139149307742404
+        ],
+        "mean": 14.32998121172037,
+        "median": 15.044289505003348
+      },
+      "wall_ms": {
+        "values": [
+          -9.625792245081055,
+          -13.588590434611891,
+          -14.071379736787614,
+          -12.7759315592186,
+          -13.375907031522704,
+          -11.613265070610924
+        ],
+        "mean": -12.508477679638798,
+        "median": -13.075919295370653
+      },
+      "ttft_mean_ms": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "ttft_p95_ms": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "tpot_mean_ms": {
+        "values": [
+          -9.631743828326867,
+          -13.600069547786475,
+          -14.076498911168155,
+          -12.787452899999874,
+          -13.38244779717238,
+          -11.620919278129326
+        ],
+        "mean": -12.516522043763846,
+        "median": -13.084950348586126
+      },
+      "existing_tpot_ms": {
+        "values": [
+          -9.631743828326867,
+          -13.600069547786475,
+          -14.076498911168155,
+          -12.787452899999874,
+          -13.38244779717238,
+          -11.620919278129326
+        ],
+        "mean": -12.516522043763846,
+        "median": -13.084950348586126
+      },
+      "request_max_gap_mean_ms": {
+        "values": [
+          -10.753015330305383,
+          -10.450226350448666,
+          -19.101312281851555,
+          -3.7458859479810758,
+          2.471616894453743,
+          -16.221095275468468
+        ],
+        "mean": -9.6333197152669,
+        "median": -10.601620840377024
+      },
+      "existing_max_gap_mean_ms": {
+        "values": [
+          -10.753015330305383,
+          -10.450226350448666,
+          -19.101312281851555,
+          -3.7458859479810758,
+          2.471616894453743,
+          -16.221095275468468
+        ],
+        "mean": -9.6333197152669,
+        "median": -10.601620840377024
+      },
+      "existing_gap_mean_ms": {
+        "values": [
+          -9.631743828326867,
+          -13.600069547786475,
+          -14.076498911168155,
+          -12.787452899999874,
+          -13.38244779717238,
+          -11.620919278129326
+        ],
+        "mean": -12.516522043763846,
+        "median": -13.084950348586126
+      },
+      "max_token_gap_ms": {
+        "values": [
+          -10.753015330305383,
+          -10.450226350448666,
+          -19.101312281851555,
+          -3.7458859479810758,
+          2.471616894453743,
+          -16.221095275468468
+        ],
+        "mean": -9.6333197152669,
+        "median": -10.601620840377024
+      },
+      "gap_p95_ms": {
+        "values": [
+          -8.587669013656374,
+          -15.233064902118121,
+          -18.32618922440562,
+          -5.551964185158775,
+          -13.243679357658012,
+          -12.735777731279041
+        ],
+        "mean": -12.27972406904599,
+        "median": -12.989728544468527
+      },
+      "kv_peak_blocks": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "kv_peak_mib": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "forward_count": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "mixed_forward_count": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "eager_count": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "full_graph_replays": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "piecewise_graph_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "piecewise_segment_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "cuda_graph_replays": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "gpu_feedback_tokens": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "async_depth": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "scheduler_ms": {
+        "values": [
+          449.74326201122847,
+          495.1523215955755,
+          405.8297168767184,
+          609.0676495226832,
+          516.0058068119523,
+          510.5565485831919
+        ],
+        "mean": 497.7258842335583,
+        "median": 502.8544350893837
+      },
+      "cpu_step_ms": {
+        "values": [
+          -9.629474520111113,
+          -13.63308025095531,
+          -14.105215320956766,
+          -12.814386928862431,
+          -13.401130670464523,
+          -11.650474100735075
+        ],
+        "mean": -12.53896029868087,
+        "median": -13.107758799663477
+      },
+      "prefill_tokens": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "decode_tokens": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "steps": {
+        "values": [
+          2.127659574468077,
+          2.127659574468077,
+          2.127659574468077,
+          2.127659574468077,
+          2.127659574468077,
+          2.127659574468077
+        ],
+        "mean": 2.127659574468077,
+        "median": 2.127659574468077
+      },
+      "empty_steps": {
+        "values": [],
+        "mean": null,
+        "median": null
+      }
+    }
+  },
+  {
+    "budget": 1024,
+    "workload": "all_prefill",
+    "candidate": "v1_async_auto",
+    "baseline": {
+      "observations": 6,
+      "median": {
+        "output_tok_s": 80.66496518432137,
+        "wall_ms": 37.19352749999416,
+        "ttft_mean_ms": 24.072630499991497,
+        "ttft_p95_ms": 34.9249356499854,
+        "tpot_mean_ms": null,
+        "existing_tpot_ms": null,
+        "request_max_gap_mean_ms": null,
+        "existing_max_gap_mean_ms": null,
+        "existing_gap_mean_ms": null,
+        "max_token_gap_ms": null,
+        "gap_p95_ms": null,
+        "kv_peak_blocks": 4.0,
+        "kv_peak_mib": 112.0,
+        "forward_count": 2.0,
+        "mixed_forward_count": 0.0,
+        "eager_count": 2.0,
+        "full_graph_replays": 0.0,
+        "piecewise_graph_replays": 0.0,
+        "piecewise_segment_replays": 0.0,
+        "cuda_graph_replays": 0.0,
+        "gpu_feedback_tokens": 0.0,
+        "async_depth": 0.0,
+        "scheduler_ms": 0.05652500001929184,
+        "cpu_step_ms": 36.82317749996855,
+        "prefill_tokens": 1800.0,
+        "decode_tokens": 0.0,
+        "steps": 2.0,
+        "empty_steps": 0.0
+      },
+      "range": {
+        "output_tok_s": [
+          69.19777041095358,
+          88.57751334051746
+        ],
+        "wall_ms": [
+          33.86864099996956,
+          43.353997999986404
+        ],
+        "ttft_mean_ms": [
+          21.878332000009475,
+          30.37020100000139
+        ],
+        "ttft_p95_ms": [
+          31.76907860000142,
+          41.13092480003502
+        ],
+        "tpot_mean_ms": null,
+        "existing_tpot_ms": null,
+        "request_max_gap_mean_ms": null,
+        "existing_max_gap_mean_ms": null,
+        "existing_gap_mean_ms": null,
+        "max_token_gap_ms": null,
+        "gap_p95_ms": null,
+        "kv_peak_blocks": [
+          4,
+          4
+        ],
+        "kv_peak_mib": [
+          112.0,
+          112.0
+        ],
+        "forward_count": [
+          2,
+          2
+        ],
+        "mixed_forward_count": [
+          0,
+          0
+        ],
+        "eager_count": [
+          2,
+          2
+        ],
+        "full_graph_replays": [
+          0,
+          0
+        ],
+        "piecewise_graph_replays": [
+          0,
+          0
+        ],
+        "piecewise_segment_replays": [
+          0,
+          0
+        ],
+        "cuda_graph_replays": [
+          0,
+          0
+        ],
+        "gpu_feedback_tokens": [
+          0,
+          0
+        ],
+        "async_depth": [
+          0,
+          0
+        ],
+        "scheduler_ms": [
+          0.049406999949042074,
+          0.10159200002135549
+        ],
+        "cpu_step_ms": [
+          33.49634300002435,
+          43.016191000049275
+        ],
+        "prefill_tokens": [
+          1800,
+          1800
+        ],
+        "decode_tokens": [
+          0,
+          0
+        ],
+        "steps": [
+          2,
+          2
+        ],
+        "empty_steps": [
+          0,
+          0
+        ]
+      }
+    },
+    "optimized": {
+      "observations": 6,
+      "median": {
+        "output_tok_s": 95.92528117973188,
+        "wall_ms": 31.27436100001546,
+        "ttft_mean_ms": 27.383421499990845,
+        "ttft_p95_ms": 30.32013094999968,
+        "tpot_mean_ms": null,
+        "existing_tpot_ms": null,
+        "request_max_gap_mean_ms": null,
+        "existing_max_gap_mean_ms": null,
+        "existing_gap_mean_ms": null,
+        "max_token_gap_ms": null,
+        "gap_p95_ms": null,
+        "kv_peak_blocks": 8.0,
+        "kv_peak_mib": 224.0,
+        "forward_count": 2.0,
+        "mixed_forward_count": 0.0,
+        "eager_count": 1.0,
+        "full_graph_replays": 0.0,
+        "piecewise_graph_replays": 1.0,
+        "piecewise_segment_replays": 29.0,
+        "cuda_graph_replays": 29.0,
+        "gpu_feedback_tokens": 0.0,
+        "async_depth": 2.0,
+        "scheduler_ms": 0.18757649999656678,
+        "cpu_step_ms": 30.893393500008415,
+        "prefill_tokens": 1800.0,
+        "decode_tokens": 0.0,
+        "steps": 3.0,
+        "empty_steps": 1.0
+      },
+      "range": {
+        "output_tok_s": [
+          73.25457782511442,
+          96.63693792322961
+        ],
+        "wall_ms": [
+          31.044030000032308,
+          40.95307199997933
+        ],
+        "ttft_mean_ms": [
+          25.09546300001375,
+          40.58870299998792
+        ],
+        "ttft_p95_ms": [
+          29.965127200006236,
+          40.64889119999293
+        ],
+        "tpot_mean_ms": null,
+        "existing_tpot_ms": null,
+        "request_max_gap_mean_ms": null,
+        "existing_max_gap_mean_ms": null,
+        "existing_gap_mean_ms": null,
+        "max_token_gap_ms": null,
+        "gap_p95_ms": null,
+        "kv_peak_blocks": [
+          8,
+          8
+        ],
+        "kv_peak_mib": [
+          224.0,
+          224.0
+        ],
+        "forward_count": [
+          2,
+          2
+        ],
+        "mixed_forward_count": [
+          0,
+          0
+        ],
+        "eager_count": [
+          1,
+          1
+        ],
+        "full_graph_replays": [
+          0,
+          0
+        ],
+        "piecewise_graph_replays": [
+          1,
+          1
+        ],
+        "piecewise_segment_replays": [
+          29,
+          29
+        ],
+        "cuda_graph_replays": [
+          29,
+          29
+        ],
+        "gpu_feedback_tokens": [
+          0,
+          0
+        ],
+        "async_depth": [
+          2,
+          2
+        ],
+        "scheduler_ms": [
+          0.18190000002960005,
+          0.23455400003058458
+        ],
+        "cpu_step_ms": [
+          30.684653000037088,
+          40.56021200000259
+        ],
+        "prefill_tokens": [
+          1800,
+          1800
+        ],
+        "decode_tokens": [
+          0,
+          0
+        ],
+        "steps": [
+          3,
+          3
+        ],
+        "empty_steps": [
+          1,
+          1
+        ]
+      }
+    },
+    "change_pct": {
+      "output_tok_s": 18.91814613759557,
+      "wall_ms": -15.91450689902868,
+      "ttft_mean_ms": 13.753341164774312,
+      "ttft_p95_ms": -13.184862374936534,
+      "tpot_mean_ms": null,
+      "existing_tpot_ms": null,
+      "request_max_gap_mean_ms": null,
+      "existing_max_gap_mean_ms": null,
+      "existing_gap_mean_ms": null,
+      "max_token_gap_ms": null,
+      "gap_p95_ms": null,
+      "kv_peak_blocks": 100.0,
+      "kv_peak_mib": 100.0,
+      "forward_count": 0.0,
+      "mixed_forward_count": null,
+      "eager_count": -50.0,
+      "full_graph_replays": null,
+      "piecewise_graph_replays": null,
+      "piecewise_segment_replays": null,
+      "cuda_graph_replays": null,
+      "gpu_feedback_tokens": null,
+      "async_depth": null,
+      "scheduler_ms": 231.84697024776187,
+      "cpu_step_ms": -16.1034011797738,
+      "prefill_tokens": 0.0,
+      "decode_tokens": null,
+      "steps": 50.0,
+      "empty_steps": null
+    },
+    "paired_change_pct": {
+      "output_tok_s": {
+        "values": [
+          31.971776859967193,
+          14.932949334422885,
+          18.01400220385878,
+          19.8377140278412,
+          3.3524081664024097,
+          5.862627350661964
+        ],
+        "mean": 15.661912990525739,
+        "median": 16.473475769140833
+      },
+      "wall_ms": {
+        "values": [
+          -24.226222924839348,
+          -12.992748746899508,
+          -15.264292259778788,
+          -16.553815456820566,
+          -3.243667202224132,
+          -5.5379575374059575
+        ],
+        "mean": -12.96978402132805,
+        "median": -14.128520503339148
+      },
+      "ttft_mean_ms": {
+        "values": [
+          -9.63030861903994,
+          17.928364023099984,
+          17.471257844348663,
+          4.588154699118641,
+          48.523807329836856,
+          33.646474713769805
+        ],
+        "mean": 18.754624998522335,
+        "median": 17.699810933724322
+      },
+      "ttft_p95_ms": {
+        "values": [
+          -22.52154714718714,
+          -10.183128840650358,
+          -12.023088502375135,
+          -14.499037482169442,
+          2.594164943739141,
+          -1.1719493358964717
+        ],
+        "mean": -9.634097727423233,
+        "median": -11.103108671512746
+      },
+      "tpot_mean_ms": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "existing_tpot_ms": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "request_max_gap_mean_ms": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "existing_max_gap_mean_ms": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "existing_gap_mean_ms": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "max_token_gap_ms": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "gap_p95_ms": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "kv_peak_blocks": {
+        "values": [
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ],
+        "mean": 100.0,
+        "median": 100.0
+      },
+      "kv_peak_mib": {
+        "values": [
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ],
+        "mean": 100.0,
+        "median": 100.0
+      },
+      "forward_count": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "mixed_forward_count": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "eager_count": {
+        "values": [
+          -50.0,
+          -50.0,
+          -50.0,
+          -50.0,
+          -50.0,
+          -50.0
+        ],
+        "mean": -50.0,
+        "median": -50.0
+      },
+      "full_graph_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "piecewise_graph_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "piecewise_segment_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "cuda_graph_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "gpu_feedback_tokens": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "async_depth": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "scheduler_ms": {
+        "values": [
+          277.83985728626067,
+          249.8458726078392,
+          164.22921482133827,
+          130.87841560485015,
+          251.60629372170638,
+          287.18197861935244
+        ],
+        "mean": 226.9302721102245,
+        "median": 250.72608316477277
+      },
+      "cpu_step_ms": {
+        "values": [
+          -24.142350164468407,
+          -13.390364760921836,
+          -15.490149794107289,
+          -16.706423912252856,
+          -3.4237827097266638,
+          -5.709429270582955
+        ],
+        "mean": -13.143750102010001,
+        "median": -14.440257277514561
+      },
+      "prefill_tokens": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "decode_tokens": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "steps": {
+        "values": [
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0
+        ],
+        "mean": 50.0,
+        "median": 50.0
+      },
+      "empty_steps": {
+        "values": [],
+        "mean": null,
+        "median": null
+      }
+    }
+  },
+  {
+    "budget": 1024,
+    "workload": "long_decode",
+    "candidate": "v1_async_auto",
+    "baseline": {
+      "observations": 6,
+      "median": {
+        "output_tok_s": 954.5150686768578,
+        "wall_ms": 213.72577500002876,
+        "ttft_mean_ms": 63.26027750000662,
+        "ttft_p95_ms": 63.26027750000662,
+        "tpot_mean_ms": 4.358681260851149,
+        "existing_tpot_ms": 4.547278436169887,
+        "request_max_gap_mean_ms": 54.80941550001148,
+        "existing_max_gap_mean_ms": 67.52175450000664,
+        "existing_gap_mean_ms": 4.547278436169887,
+        "max_token_gap_ms": 67.52175450000664,
+        "gap_p95_ms": 4.003184500021462,
+        "kv_peak_blocks": 16.0,
+        "kv_peak_mib": 448.0,
+        "forward_count": 50.0,
+        "mixed_forward_count": 0.0,
+        "eager_count": 3.0,
+        "full_graph_replays": 47.0,
+        "piecewise_graph_replays": 0.0,
+        "piecewise_segment_replays": 0.0,
+        "cuda_graph_replays": 47.0,
+        "gpu_feedback_tokens": 0.0,
+        "async_depth": 0.0,
+        "scheduler_ms": 0.22149750037669946,
+        "cpu_step_ms": 212.90717950012095,
+        "prefill_tokens": 3000.0,
+        "decode_tokens": 203.0,
+        "steps": 50.0,
+        "empty_steps": 2.0
+      },
+      "range": {
+        "output_tok_s": [
+          933.8251747805466,
+          984.8572025610041
+        ],
+        "wall_ms": [
+          207.13662800000066,
+          218.45630799998617
+        ],
+        "ttft_mean_ms": [
+          58.957618999954775,
+          70.02804100000048
+        ],
+        "ttft_p95_ms": [
+          58.957618999954775,
+          70.02804100000048
+        ],
+        "tpot_mean_ms": [
+          4.246104445106806,
+          4.447196665532071
+        ],
+        "existing_tpot_ms": [
+          4.407058106383064,
+          4.64752753191533
+        ],
+        "request_max_gap_mean_ms": [
+          51.433303799990426,
+          59.99721460002547
+        ],
+        "existing_max_gap_mean_ms": [
+          63.25344999999061,
+          73.79815300004111
+        ],
+        "existing_gap_mean_ms": [
+          4.407058106383064,
+          4.64752753191533
+        ],
+        "max_token_gap_ms": [
+          63.25344999999061,
+          73.79815300004111
+        ],
+        "gap_p95_ms": [
+          3.808172999981707,
+          4.491296999958649
+        ],
+        "kv_peak_blocks": [
+          16,
+          16
+        ],
+        "kv_peak_mib": [
+          448.0,
+          448.0
+        ],
+        "forward_count": [
+          50,
+          50
+        ],
+        "mixed_forward_count": [
+          0,
+          0
+        ],
+        "eager_count": [
+          3,
+          3
+        ],
+        "full_graph_replays": [
+          47,
+          47
+        ],
+        "piecewise_graph_replays": [
+          0,
+          0
+        ],
+        "piecewise_segment_replays": [
+          0,
+          0
+        ],
+        "cuda_graph_replays": [
+          47,
+          47
+        ],
+        "gpu_feedback_tokens": [
+          0,
+          0
+        ],
+        "async_depth": [
+          0,
+          0
+        ],
+        "scheduler_ms": [
+          0.20793899966520257,
+          0.24482399993530635
+        ],
+        "cpu_step_ms": [
+          206.29376400000865,
+          217.6430250001431
+        ],
+        "prefill_tokens": [
+          3000,
+          3000
+        ],
+        "decode_tokens": [
+          203,
+          203
+        ],
+        "steps": [
+          50,
+          50
+        ],
+        "empty_steps": [
+          2,
+          2
+        ]
+      }
+    },
+    "optimized": {
+      "observations": 6,
+      "median": {
+        "output_tok_s": 1115.3861112646214,
+        "wall_ms": 182.896318499985,
+        "ttft_mean_ms": 58.91945250002095,
+        "ttft_p95_ms": 58.91945250002095,
+        "tpot_mean_ms": 3.7656302489363496,
+        "existing_tpot_ms": 3.891350436170322,
+        "request_max_gap_mean_ms": 18.008661499970913,
+        "existing_max_gap_mean_ms": 21.604462999960106,
+        "existing_gap_mean_ms": 3.891350436170322,
+        "max_token_gap_ms": 21.604462999960106,
+        "gap_p95_ms": 18.26365900001292,
+        "kv_peak_blocks": 16.0,
+        "kv_peak_mib": 448.0,
+        "forward_count": 47.0,
+        "mixed_forward_count": 3.0,
+        "eager_count": 1.0,
+        "full_graph_replays": 44.0,
+        "piecewise_graph_replays": 2.0,
+        "piecewise_segment_replays": 58.0,
+        "cuda_graph_replays": 102.0,
+        "gpu_feedback_tokens": 199.0,
+        "async_depth": 2.0,
+        "scheduler_ms": 1.2789765000036368,
+        "cpu_step_ms": 182.14227199990773,
+        "prefill_tokens": 3000.0,
+        "decode_tokens": 203.0,
+        "steps": 48.0,
+        "empty_steps": 1.0
+      },
+      "range": {
+        "output_tok_s": [
+          1107.1700560777945,
+          1116.9686932676248
+        ],
+        "wall_ms": [
+          182.63716899997462,
+          184.2535380000072
+        ],
+        "ttft_mean_ms": [
+          57.6495770000065,
+          59.60077299999966
+        ],
+        "ttft_p95_ms": [
+          57.6495770000065,
+          59.60077299999966
+        ],
+        "tpot_mean_ms": [
+          3.7591744720579787,
+          3.790109416453858
+        ],
+        "existing_tpot_ms": [
+          3.8858257446814277,
+          3.920066787233804
+        ],
+        "request_max_gap_mean_ms": [
+          17.472457000019403,
+          18.35808499996574
+        ],
+        "existing_max_gap_mean_ms": [
+          20.83855300003279,
+          22.036321999962638
+        ],
+        "existing_gap_mean_ms": [
+          3.8858257446814277,
+          3.920066787233804
+        ],
+        "max_token_gap_ms": [
+          20.83855300003279,
+          22.036321999962638
+        ],
+        "gap_p95_ms": [
+          17.14445400000386,
+          18.725709000023016
+        ],
+        "kv_peak_blocks": [
+          16,
+          16
+        ],
+        "kv_peak_mib": [
+          448.0,
+          448.0
+        ],
+        "forward_count": [
+          47,
+          47
+        ],
+        "mixed_forward_count": [
+          3,
+          3
+        ],
+        "eager_count": [
+          1,
+          1
+        ],
+        "full_graph_replays": [
+          44,
+          44
+        ],
+        "piecewise_graph_replays": [
+          2,
+          2
+        ],
+        "piecewise_segment_replays": [
+          58,
+          58
+        ],
+        "cuda_graph_replays": [
+          102,
+          102
+        ],
+        "gpu_feedback_tokens": [
+          199,
+          199
+        ],
+        "async_depth": [
+          2,
+          2
+        ],
+        "scheduler_ms": [
+          1.171913999996832,
+          1.4270160000933174
+        ],
+        "cpu_step_ms": [
+          181.74339000012196,
+          183.39511100003847
+        ],
+        "prefill_tokens": [
+          3000,
+          3000
+        ],
+        "decode_tokens": [
+          203,
+          203
+        ],
+        "steps": [
+          48,
+          48
+        ],
+        "empty_steps": [
+          1,
+          1
+        ]
+      }
+    },
+    "change_pct": {
+      "output_tok_s": 16.853693343025157,
+      "wall_ms": -14.424772351411342,
+      "ttft_mean_ms": -6.861849444124268,
+      "ttft_p95_ms": -6.861849444124268,
+      "tpot_mean_ms": -13.60620280362026,
+      "existing_tpot_ms": -14.42462803205965,
+      "request_max_gap_mean_ms": -67.14312434153373,
+      "existing_max_gap_mean_ms": -68.00370020012146,
+      "existing_gap_mean_ms": -14.42462803205965,
+      "max_token_gap_ms": -68.00370020012146,
+      "gap_p95_ms": 356.22826027416437,
+      "kv_peak_blocks": 0.0,
+      "kv_peak_mib": 0.0,
+      "forward_count": -6.000000000000005,
+      "mixed_forward_count": null,
+      "eager_count": -66.66666666666667,
+      "full_graph_replays": -6.382978723404253,
+      "piecewise_graph_replays": null,
+      "piecewise_segment_replays": null,
+      "cuda_graph_replays": 117.02127659574467,
+      "gpu_feedback_tokens": null,
+      "async_depth": null,
+      "scheduler_ms": 477.4225432921316,
+      "cpu_step_ms": -14.449915485445498,
+      "prefill_tokens": 0.0,
+      "decode_tokens": 0.0,
+      "steps": -4.0000000000000036,
+      "empty_steps": -50.0
+    },
+    "paired_change_pct": {
+      "output_tok_s": {
+        "values": [
+          18.892335773692025,
+          16.070714293182565,
+          16.240272011882073,
+          12.419349038493133,
+          19.61218474647759,
+          17.530783308507615
+        ],
+        "mean": 16.7942731953725,
+        "median": 16.885527660194846
+      },
+      "wall_ms": {
+        "values": [
+          -15.890289017160041,
+          -13.845623670919805,
+          -13.971295602458655,
+          -11.047341178110404,
+          -16.396477322144353,
+          -14.915907828582153
+        ],
+        "mean": -14.344489103229236,
+        "median": -14.443601715520405
+      },
+      "ttft_mean_ms": {
+        "values": [
+          -1.0241575142929893,
+          -5.84913771577259,
+          -9.789536333681003,
+          -2.218614018231091,
+          -15.978730577360768,
+          -7.716343920238744
+        ],
+        "mean": -7.096086679929531,
+        "median": -6.782740818005667
+      },
+      "ttft_p95_ms": {
+        "values": [
+          -1.0241575142929893,
+          -5.84913771577259,
+          -9.789536333681003,
+          -2.218614018231091,
+          -15.978730577360768,
+          -7.716343920238744
+        ],
+        "mean": -7.096086679929531,
+        "median": -6.782740818005667
+      },
+      "tpot_mean_ms": {
+        "values": [
+          -15.211239518049346,
+          -12.830195531221221,
+          -12.966698330548997,
+          -10.73913829836276,
+          -15.416430649467417,
+          -14.314432408057066
+        ],
+        "mean": -13.5796891226178,
+        "median": -13.640565369303031
+      },
+      "existing_tpot_ms": {
+        "values": [
+          -15.890151750691617,
+          -13.84059871255242,
+          -13.977152095909407,
+          -11.050258639519972,
+          -16.389398061725757,
+          -14.921600835865444
+        ],
+        "mean": -14.344860016044104,
+        "median": -14.449376465887426
+      },
+      "request_max_gap_mean_ms": {
+        "values": [
+          -65.68682938099914,
+          -66.39616221134455,
+          -68.94941332058985,
+          -65.38929509713675,
+          -69.91954089808952,
+          -67.30175605217315
+        ],
+        "mean": -67.27383282672216,
+        "median": -66.84895913175885
+      },
+      "existing_max_gap_mean_ms": {
+        "values": [
+          -66.50589520559971,
+          -67.26310303905551,
+          -69.9482096995817,
+          -66.30575881629886,
+          -70.65618972871215,
+          -68.15289710647573
+        ],
+        "mean": -68.13867559928728,
+        "median": -67.70800007276563
+      },
+      "existing_gap_mean_ms": {
+        "values": [
+          -15.890151750691617,
+          -13.84059871255242,
+          -13.977152095909407,
+          -11.050258639519972,
+          -16.389398061725757,
+          -14.921600835865444
+        ],
+        "mean": -14.344860016044104,
+        "median": -14.449376465887426
+      },
+      "max_token_gap_ms": {
+        "values": [
+          -66.50589520559971,
+          -67.26310303905551,
+          -69.9482096995817,
+          -66.30575881629886,
+          -70.65618972871215,
+          -68.15289710647573
+        ],
+        "mean": -68.13867559928728,
+        "median": -67.70800007276563
+      },
+      "gap_p95_ms": {
+        "values": [
+          317.33261417240425,
+          361.14567274367306,
+          370.2363347178066,
+          326.0361743433451,
+          304.4793519599133,
+          387.47502966092986
+        ],
+        "mean": 344.45086293301205,
+        "median": 343.5909235435091
+      },
+      "kv_peak_blocks": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "kv_peak_mib": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "forward_count": {
+        "values": [
+          -6.000000000000005,
+          -6.000000000000005,
+          -6.000000000000005,
+          -6.000000000000005,
+          -6.000000000000005,
+          -6.000000000000005
+        ],
+        "mean": -6.000000000000005,
+        "median": -6.000000000000005
+      },
+      "mixed_forward_count": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "eager_count": {
+        "values": [
+          -66.66666666666667,
+          -66.66666666666667,
+          -66.66666666666667,
+          -66.66666666666667,
+          -66.66666666666667,
+          -66.66666666666667
+        ],
+        "mean": -66.66666666666667,
+        "median": -66.66666666666667
+      },
+      "full_graph_replays": {
+        "values": [
+          -6.382978723404253,
+          -6.382978723404253,
+          -6.382978723404253,
+          -6.382978723404253,
+          -6.382978723404253,
+          -6.382978723404253
+        ],
+        "mean": -6.382978723404253,
+        "median": -6.382978723404253
+      },
+      "piecewise_graph_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "piecewise_segment_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "cuda_graph_replays": {
+        "values": [
+          117.02127659574467,
+          117.02127659574467,
+          117.02127659574467,
+          117.02127659574467,
+          117.02127659574467,
+          117.02127659574467
+        ],
+        "mean": 117.02127659574467,
+        "median": 117.02127659574467
+      },
+      "gpu_feedback_tokens": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "async_depth": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "scheduler_ms": {
+        "values": [
+          463.58547549218844,
+          471.051590087969,
+          470.6364675454103,
+          428.6054472730407,
+          533.1437359675131,
+          533.7110979171495
+        ],
+        "mean": 483.4556357138785,
+        "median": 470.8440288166896
+      },
+      "cpu_step_ms": {
+        "values": [
+          -15.921629390927649,
+          -13.8618777327985,
+          -13.95779990718844,
+          -11.100021908548442,
+          -16.42395385752582,
+          -15.045962810677448
+        ],
+        "mean": -14.385207601277717,
+        "median": -14.501881358932945
+      },
+      "prefill_tokens": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "decode_tokens": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "steps": {
+        "values": [
+          -4.0000000000000036,
+          -4.0000000000000036,
+          -4.0000000000000036,
+          -4.0000000000000036,
+          -4.0000000000000036,
+          -4.0000000000000036
+        ],
+        "mean": -4.0000000000000036,
+        "median": -4.0000000000000036
+      },
+      "empty_steps": {
+        "values": [
+          -50.0,
+          -50.0,
+          -50.0,
+          -50.0,
+          -50.0,
+          -50.0
+        ],
+        "mean": -50.0,
+        "median": -50.0
+      }
+    }
+  },
+  {
+    "budget": 1024,
+    "workload": "many_long",
+    "candidate": "v1_async_auto",
+    "baseline": {
+      "observations": 6,
+      "median": {
+        "output_tok_s": 603.1602114754614,
+        "wall_ms": 417.8010605000111,
+        "ttft_mean_ms": 155.46513662500416,
+        "ttft_p95_ms": 238.9300890000001,
+        "tpot_mean_ms": 9.995732770123956,
+        "existing_tpot_ms": 8.889021265957204,
+        "request_max_gap_mean_ms": 176.63251337500085,
+        "existing_max_gap_mean_ms": 255.36281500001223,
+        "existing_gap_mean_ms": 8.889021265957204,
+        "max_token_gap_ms": 255.36281500001223,
+        "gap_p95_ms": 5.590113999971891,
+        "kv_peak_blocks": 52.0,
+        "kv_peak_mib": 1456.0,
+        "forward_count": 59.0,
+        "mixed_forward_count": 0.0,
+        "eager_count": 12.0,
+        "full_graph_replays": 47.0,
+        "piecewise_graph_replays": 0.0,
+        "piecewise_segment_replays": 0.0,
+        "cuda_graph_replays": 47.0,
+        "gpu_feedback_tokens": 0.0,
+        "async_depth": 0.0,
+        "scheduler_ms": 0.41861799991238513,
+        "cpu_step_ms": 415.40321950017756,
+        "prefill_tokens": 12000.0,
+        "decode_tokens": 248.0,
+        "steps": 59.0,
+        "empty_steps": 8.0
+      },
+      "range": {
+        "output_tok_s": [
+          580.4990975519539,
+          610.2661544335022
+        ],
+        "wall_ms": [
+          412.93458299998065,
+          434.1092020000019
+        ],
+        "ttft_mean_ms": [
+          151.0120095000218,
+          166.42203150000512
+        ],
+        "ttft_p95_ms": [
+          232.87696800004196,
+          251.76559245003884
+        ],
+        "tpot_mean_ms": [
+          9.882747993617432,
+          10.372168028013318
+        ],
+        "existing_tpot_ms": [
+          8.78626304255283,
+          9.236144489361632
+        ],
+        "request_max_gap_mean_ms": [
+          173.4262263749926,
+          185.29828775002244
+        ],
+        "existing_max_gap_mean_ms": [
+          249.7163799999953,
+          269.18506200001957
+        ],
+        "existing_gap_mean_ms": [
+          8.78626304255283,
+          9.236144489361632
+        ],
+        "max_token_gap_ms": [
+          249.7163799999953,
+          269.18506200001957
+        ],
+        "gap_p95_ms": [
+          5.117229999996198,
+          5.8575830000222595
+        ],
+        "kv_peak_blocks": [
+          52,
+          52
+        ],
+        "kv_peak_mib": [
+          1456.0,
+          1456.0
+        ],
+        "forward_count": [
+          59,
+          59
+        ],
+        "mixed_forward_count": [
+          0,
+          0
+        ],
+        "eager_count": [
+          12,
+          12
+        ],
+        "full_graph_replays": [
+          47,
+          47
+        ],
+        "piecewise_graph_replays": [
+          0,
+          0
+        ],
+        "piecewise_segment_replays": [
+          0,
+          0
+        ],
+        "cuda_graph_replays": [
+          47,
+          47
+        ],
+        "gpu_feedback_tokens": [
+          0,
+          0
+        ],
+        "async_depth": [
+          0,
+          0
+        ],
+        "scheduler_ms": [
+          0.38783200011494046,
+          0.4460490000610662
+        ],
+        "cpu_step_ms": [
+          409.9653380000632,
+          431.70765700028824
+        ],
+        "prefill_tokens": [
+          12000,
+          12000
+        ],
+        "decode_tokens": [
+          248,
+          248
+        ],
+        "steps": [
+          59,
+          59
+        ],
+        "empty_steps": [
+          8,
+          8
+        ]
+      }
+    },
+    "optimized": {
+      "observations": 6,
+      "median": {
+        "output_tok_s": 691.5742603425679,
+        "wall_ms": 364.3866429999889,
+        "ttft_mean_ms": 155.67605412500995,
+        "ttft_p95_ms": 241.10316975001777,
+        "tpot_mean_ms": 8.54423224423759,
+        "existing_tpot_ms": 7.7522811276596855,
+        "request_max_gap_mean_ms": 21.41377093749597,
+        "existing_max_gap_mean_ms": 23.958862000000636,
+        "existing_gap_mean_ms": 7.7522811276596855,
+        "max_token_gap_ms": 23.958862000000636,
+        "gap_p95_ms": 22.67527827501538,
+        "kv_peak_blocks": 52.0,
+        "kv_peak_mib": 1456.0,
+        "forward_count": 47.0,
+        "mixed_forward_count": 12.0,
+        "eager_count": 1.0,
+        "full_graph_replays": 35.0,
+        "piecewise_graph_replays": 11.0,
+        "piecewise_segment_replays": 319.0,
+        "cuda_graph_replays": 354.0,
+        "gpu_feedback_tokens": 244.0,
+        "async_depth": 2.0,
+        "scheduler_ms": 2.240806999935785,
+        "cpu_step_ms": 361.3799634999282,
+        "prefill_tokens": 12000.0,
+        "decode_tokens": 248.0,
+        "steps": 48.0,
+        "empty_steps": 1.0
+      },
+      "range": {
+        "output_tok_s": [
+          683.8037492030747,
+          697.5274029245846
+        ],
+        "wall_ms": [
+          361.2761289999753,
+          368.5267890000432
+        ],
+        "ttft_mean_ms": [
+          153.89465399998414,
+          156.00826649998112
+        ],
+        "ttft_p95_ms": [
+          238.5355877499904,
+          243.26789729999516
+        ],
+        "tpot_mean_ms": [
+          8.485683370921763,
+          8.681820402305497
+        ],
+        "existing_tpot_ms": [
+          7.686116808510265,
+          7.840824021276932
+        ],
+        "request_max_gap_mean_ms": [
+          21.150283499984823,
+          27.972849999983396
+        ],
+        "existing_max_gap_mean_ms": [
+          23.59400000000278,
+          31.258467999975892
+        ],
+        "existing_gap_mean_ms": [
+          7.686116808510265,
+          7.840824021276932
+        ],
+        "max_token_gap_ms": [
+          23.59400000000278,
+          31.258467999975892
+        ],
+        "gap_p95_ms": [
+          21.96827000000212,
+          23.610283050012963
+        ],
+        "kv_peak_blocks": [
+          52,
+          52
+        ],
+        "kv_peak_mib": [
+          1456.0,
+          1456.0
+        ],
+        "forward_count": [
+          47,
+          47
+        ],
+        "mixed_forward_count": [
+          12,
+          12
+        ],
+        "eager_count": [
+          1,
+          1
+        ],
+        "full_graph_replays": [
+          35,
+          35
+        ],
+        "piecewise_graph_replays": [
+          11,
+          11
+        ],
+        "piecewise_segment_replays": [
+          319,
+          319
+        ],
+        "cuda_graph_replays": [
+          354,
+          354
+        ],
+        "gpu_feedback_tokens": [
+          244,
+          244
+        ],
+        "async_depth": [
+          2,
+          2
+        ],
+        "scheduler_ms": [
+          2.0959890003382498,
+          2.4305900000172187
+        ],
+        "cpu_step_ms": [
+          358.8556149998112,
+          366.06916399961165
+        ],
+        "prefill_tokens": [
+          12000,
+          12000
+        ],
+        "decode_tokens": [
+          248,
+          248
+        ],
+        "steps": [
+          48,
+          48
+        ],
+        "empty_steps": [
+          1,
+          1
+        ]
+      }
+    },
+    "change_pct": {
+      "output_tok_s": 14.658468377883604,
+      "wall_ms": -12.784653403248303,
+      "ttft_mean_ms": 0.13566868082748318,
+      "ttft_p95_ms": 0.90950485102681,
+      "tpot_mean_ms": -14.52120178947488,
+      "existing_tpot_ms": -12.788136109550752,
+      "request_max_gap_mean_ms": -87.8766538909893,
+      "existing_max_gap_mean_ms": -90.61771699219423,
+      "existing_gap_mean_ms": -12.788136109550752,
+      "max_token_gap_ms": -90.61771699219423,
+      "gap_p95_ms": 305.63176842421103,
+      "kv_peak_blocks": 0.0,
+      "kv_peak_mib": 0.0,
+      "forward_count": -20.33898305084746,
+      "mixed_forward_count": null,
+      "eager_count": -91.66666666666666,
+      "full_graph_replays": -25.531914893617024,
+      "piecewise_graph_replays": null,
+      "piecewise_segment_replays": null,
+      "cuda_graph_replays": 653.1914893617022,
+      "gpu_feedback_tokens": null,
+      "async_depth": null,
+      "scheduler_ms": 435.2868248390599,
+      "cpu_step_ms": -13.005016202149655,
+      "prefill_tokens": 0.0,
+      "decode_tokens": 0.0,
+      "steps": -18.644067796610166,
+      "empty_steps": -87.5
+    },
+    "paired_change_pct": {
+      "output_tok_s": {
+        "values": [
+          13.424713384585395,
+          19.28879510960091,
+          14.953832026562907,
+          14.284984923337984,
+          15.322167110315622,
+          14.298883832429699
+        ],
+        "mean": 15.262229397805418,
+        "median": 14.626357929496303
+      },
+      "wall_ms": {
+        "values": [
+          -11.835792204355544,
+          -16.169829774773568,
+          -13.008554619655877,
+          -12.499441578366833,
+          -13.28640234072138,
+          -12.510081772445725
+        ],
+        "mean": -13.218350381719821,
+        "median": -12.7593181960508
+      },
+      "ttft_mean_ms": {
+        "values": [
+          2.3061318395137365,
+          -6.399002075636739,
+          0.045753436696771566,
+          0.390624976687759,
+          -2.965219026412902,
+          1.9088842731822098
+        ],
+        "mean": -0.7854710959948606,
+        "median": 0.21818920669226527
+      },
+      "ttft_p95_ms": {
+        "values": [
+          2.7965214399555016,
+          -4.296328936273664,
+          1.3427186442027228,
+          1.7668582788897602,
+          -0.7130303250648118,
+          2.429875224907363
+        ],
+        "mean": 0.554435721102812,
+        "median": 1.5547884615462415
+      },
+      "tpot_mean_ms": {
+        "values": [
+          -14.223186154598089,
+          -17.817783959363254,
+          -15.219751103874202,
+          -14.283182594475408,
+          -13.893638712141653,
+          -14.777013438374798
+        ],
+        "mean": -15.035759327137901,
+        "median": -14.530098016425104
+      },
+      "existing_tpot_ms": {
+        "values": [
+          -11.831572181343708,
+          -16.170807533993482,
+          -13.008520794259804,
+          -12.505838823337534,
+          -13.286406407776497,
+          -12.521207579541349
+        ],
+        "mean": -13.220725553375395,
+        "median": -12.764864186900576
+      },
+      "request_max_gap_mean_ms": {
+        "values": [
+          -87.89326035728237,
+          -88.472945900169,
+          -84.2611714195559,
+          -87.82554893032935,
+          -88.04580073059857,
+          -87.30026459357398
+        ],
+        "mean": -87.29983198858486,
+        "median": -87.85940464380586
+      },
+      "existing_max_gap_mean_ms": {
+        "values": [
+          -90.63646518583758,
+          -91.0421827196288,
+          -87.80158093718765,
+          -90.64561400776557,
+          -90.80867207834784,
+          -90.21357910123011
+        ],
+        "mean": -90.1913490049996,
+        "median": -90.64103959680158
+      },
+      "existing_gap_mean_ms": {
+        "values": [
+          -11.831572181343708,
+          -16.170807533993482,
+          -13.008520794259804,
+          -12.505838823337534,
+          -13.286406407776497,
+          -12.521207579541349
+        ],
+        "mean": -13.220725553375395,
+        "median": -12.764864186900576
+      },
+      "max_token_gap_ms": {
+        "values": [
+          -90.63646518583758,
+          -91.0421827196288,
+          -87.80158093718765,
+          -90.64561400776557,
+          -90.80867207834784,
+          -90.21357910123011
+        ],
+        "mean": -90.1913490049996,
+        "median": -90.64103959680158
+      },
+      "gap_p95_ms": {
+        "values": [
+          306.9295153955575,
+          275.85583655697303,
+          303.07210414130265,
+          332.41034611773534,
+          333.89480246108167,
+          304.38611371583966
+        ],
+        "mean": 309.42478639808166,
+        "median": 305.65781455569856
+      },
+      "kv_peak_blocks": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "kv_peak_mib": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "forward_count": {
+        "values": [
+          -20.33898305084746,
+          -20.33898305084746,
+          -20.33898305084746,
+          -20.33898305084746,
+          -20.33898305084746,
+          -20.33898305084746
+        ],
+        "mean": -20.33898305084746,
+        "median": -20.33898305084746
+      },
+      "mixed_forward_count": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "eager_count": {
+        "values": [
+          -91.66666666666666,
+          -91.66666666666666,
+          -91.66666666666666,
+          -91.66666666666666,
+          -91.66666666666666,
+          -91.66666666666666
+        ],
+        "mean": -91.66666666666666,
+        "median": -91.66666666666666
+      },
+      "full_graph_replays": {
+        "values": [
+          -25.531914893617024,
+          -25.531914893617024,
+          -25.531914893617024,
+          -25.531914893617024,
+          -25.531914893617024,
+          -25.531914893617024
+        ],
+        "mean": -25.531914893617024,
+        "median": -25.531914893617024
+      },
+      "piecewise_graph_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "piecewise_segment_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "cuda_graph_replays": {
+        "values": [
+          653.1914893617022,
+          653.1914893617022,
+          653.1914893617022,
+          653.1914893617022,
+          653.1914893617022,
+          653.1914893617022
+        ],
+        "mean": 653.1914893617022,
+        "median": 653.1914893617022
+      },
+      "gpu_feedback_tokens": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "async_depth": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "scheduler_ms": {
+        "values": [
+          403.7444315846047,
+          448.06309936600724,
+          482.71069481120026,
+          457.63861649023426,
+          389.49175307471376,
+          460.1379953229454
+        ],
+        "mean": 440.29776510828424,
+        "median": 452.8508579281207
+      },
+      "cpu_step_ms": {
+        "values": [
+          -11.937731605554891,
+          -16.463421217490936,
+          -13.086505298453964,
+          -12.549657568688222,
+          -13.348094736785121,
+          -12.466840062523554
+        ],
+        "mean": -13.308708414916115,
+        "median": -12.818081433571093
+      },
+      "prefill_tokens": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "decode_tokens": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "steps": {
+        "values": [
+          -18.644067796610166,
+          -18.644067796610166,
+          -18.644067796610166,
+          -18.644067796610166,
+          -18.644067796610166,
+          -18.644067796610166
+        ],
+        "mean": -18.644067796610166,
+        "median": -18.644067796610166
+      },
+      "empty_steps": {
+        "values": [
+          -87.5,
+          -87.5,
+          -87.5,
+          -87.5,
+          -87.5,
+          -87.5
+        ],
+        "mean": -87.5,
+        "median": -87.5
+      }
+    }
+  },
+  {
+    "budget": 1024,
+    "workload": "capacity_pressure",
+    "candidate": "v1_async_auto",
+    "baseline": {
+      "observations": 6,
+      "median": {
+        "output_tok_s": 418.97832007473045,
+        "wall_ms": 792.4080735000132,
+        "ttft_mean_ms": 359.6617308888944,
+        "ttft_p95_ms": 635.4976087999944,
+        "tpot_mean_ms": 14.060253066884847,
+        "existing_tpot_ms": 16.85951173404233,
+        "request_max_gap_mean_ms": 184.61136153846908,
+        "existing_max_gap_mean_ms": 331.4585615000283,
+        "existing_gap_mean_ms": 16.85951173404233,
+        "max_token_gap_ms": 331.4585615000283,
+        "gap_p95_ms": 5.938254999989567,
+        "kv_peak_blocks": 64.0,
+        "kv_peak_mib": 1792.0,
+        "forward_count": 74.0,
+        "mixed_forward_count": 0.0,
+        "eager_count": 27.0,
+        "full_graph_replays": 47.0,
+        "piecewise_graph_replays": 0.0,
+        "piecewise_segment_replays": 0.0,
+        "cuda_graph_replays": 47.0,
+        "gpu_feedback_tokens": 0.0,
+        "async_depth": 0.0,
+        "scheduler_ms": 0.9081050002350821,
+        "cpu_step_ms": 787.1592504999398,
+        "prefill_tokens": 27000.0,
+        "decode_tokens": 323.0,
+        "steps": 74.0,
+        "empty_steps": 18.0
+      },
+      "range": {
+        "output_tok_s": [
+          395.6816845536738,
+          428.1598963494009
+        ],
+        "wall_ms": [
+          775.4112490000011,
+          839.058295999962
+        ],
+        "ttft_mean_ms": [
+          353.5346925555448,
+          394.5210781111036
+        ],
+        "ttft_p95_ms": [
+          621.4418451999677,
+          686.8719488000011
+        ],
+        "tpot_mean_ms": [
+          13.862917235025135,
+          14.611303571413684
+        ],
+        "existing_tpot_ms": [
+          16.497823234042823,
+          17.852003340426513
+        ],
+        "request_max_gap_mean_ms": [
+          181.70026584613197,
+          197.41279707693593
+        ],
+        "existing_max_gap_mean_ms": [
+          328.82526399998824,
+          362.05840100001296
+        ],
+        "existing_gap_mean_ms": [
+          16.497823234042823,
+          17.852003340426513
+        ],
+        "max_token_gap_ms": [
+          328.82526399998824,
+          362.05840100001296
+        ],
+        "gap_p95_ms": [
+          5.700283999999556,
+          6.148446999986845
+        ],
+        "kv_peak_blocks": [
+          64,
+          64
+        ],
+        "kv_peak_mib": [
+          1792.0,
+          1792.0
+        ],
+        "forward_count": [
+          74,
+          74
+        ],
+        "mixed_forward_count": [
+          0,
+          0
+        ],
+        "eager_count": [
+          27,
+          27
+        ],
+        "full_graph_replays": [
+          47,
+          47
+        ],
+        "piecewise_graph_replays": [
+          0,
+          0
+        ],
+        "piecewise_segment_replays": [
+          0,
+          0
+        ],
+        "cuda_graph_replays": [
+          47,
+          47
+        ],
+        "gpu_feedback_tokens": [
+          0,
+          0
+        ],
+        "async_depth": [
+          0,
+          0
+        ],
+        "scheduler_ms": [
+          0.8222270000146636,
+          0.9822969996662323
+        ],
+        "cpu_step_ms": [
+          770.5673429999251,
+          833.9467060001198
+        ],
+        "prefill_tokens": [
+          27000,
+          27000
+        ],
+        "decode_tokens": [
+          323,
+          323
+        ],
+        "steps": [
+          74,
+          74
+        ],
+        "empty_steps": [
+          18,
+          18
+        ]
+      }
+    },
+    "optimized": {
+      "observations": 6,
+      "median": {
+        "output_tok_s": 491.1915128380732,
+        "wall_ms": 675.9108425000022,
+        "ttft_mean_ms": 334.27547805555946,
+        "ttft_p95_ms": 581.8457360000366,
+        "tpot_mean_ms": 14.16501712978666,
+        "existing_tpot_ms": 14.380837946808416,
+        "request_max_gap_mean_ms": 22.96130250000444,
+        "existing_max_gap_mean_ms": 24.80422049998765,
+        "existing_gap_mean_ms": 14.380837946808416,
+        "max_token_gap_ms": 24.80422049998765,
+        "gap_p95_ms": 24.200057000001607,
+        "kv_peak_blocks": 64.0,
+        "kv_peak_mib": 1792.0,
+        "forward_count": 47.0,
+        "mixed_forward_count": 27.0,
+        "eager_count": 5.0,
+        "full_graph_replays": 20.0,
+        "piecewise_graph_replays": 22.0,
+        "piecewise_segment_replays": 638.0,
+        "cuda_graph_replays": 658.0,
+        "gpu_feedback_tokens": 319.0,
+        "async_depth": 2.0,
+        "scheduler_ms": 4.067876500158718,
+        "cpu_step_ms": 670.5892289998872,
+        "prefill_tokens": 27000.0,
+        "decode_tokens": 323.0,
+        "steps": 48.0,
+        "empty_steps": 1.0
+      },
+      "range": {
+        "output_tok_s": [
+          485.0250587612225,
+          496.5637734528596
+        ],
+        "wall_ms": [
+          668.5948869999834,
+          684.5007160000023
+        ],
+        "ttft_mean_ms": [
+          329.2201504444531,
+          338.80146700000245
+        ],
+        "ttft_p95_ms": [
+          575.3083321999839,
+          587.4422202000005
+        ],
+        "tpot_mean_ms": [
+          14.016821239607056,
+          14.343853781451216
+        ],
+        "existing_tpot_ms": [
+          14.22578997872332,
+          14.56293910638351
+        ],
+        "request_max_gap_mean_ms": [
+          22.538689615378015,
+          23.591329000015985
+        ],
+        "existing_max_gap_mean_ms": [
+          24.086662999991404,
+          25.432193000028747
+        ],
+        "existing_gap_mean_ms": [
+          14.22578997872332,
+          14.56293910638351
+        ],
+        "max_token_gap_ms": [
+          24.086662999991404,
+          25.432193000028747
+        ],
+        "gap_p95_ms": [
+          23.951629999999113,
+          24.30965900003912
+        ],
+        "kv_peak_blocks": [
+          64,
+          64
+        ],
+        "kv_peak_mib": [
+          1792.0,
+          1792.0
+        ],
+        "forward_count": [
+          47,
+          47
+        ],
+        "mixed_forward_count": [
+          27,
+          27
+        ],
+        "eager_count": [
+          5,
+          5
+        ],
+        "full_graph_replays": [
+          20,
+          20
+        ],
+        "piecewise_graph_replays": [
+          22,
+          22
+        ],
+        "piecewise_segment_replays": [
+          638,
+          638
+        ],
+        "cuda_graph_replays": [
+          658,
+          658
+        ],
+        "gpu_feedback_tokens": [
+          319,
+          319
+        ],
+        "async_depth": [
+          2,
+          2
+        ],
+        "scheduler_ms": [
+          3.8418719998958295,
+          4.498335000050702
+        ],
+        "cpu_step_ms": [
+          663.318977000074,
+          678.4767170003647
+        ],
+        "prefill_tokens": [
+          27000,
+          27000
+        ],
+        "decode_tokens": [
+          323,
+          323
+        ],
+        "steps": [
+          48,
+          48
+        ],
+        "empty_steps": [
+          1,
+          1
+        ]
+      }
+    },
+    "change_pct": {
+      "output_tok_s": 17.235544013461745,
+      "wall_ms": -14.701671385735704,
+      "ttft_mean_ms": -7.058369198911851,
+      "ttft_p95_ms": -8.442497982214004,
+      "tpot_mean_ms": 0.7451079465173871,
+      "existing_tpot_ms": -14.70193103059463,
+      "request_max_gap_mean_ms": -87.56235677552284,
+      "existing_max_gap_mean_ms": -92.5166451010542,
+      "existing_gap_mean_ms": -14.70193103059463,
+      "max_token_gap_ms": -92.5166451010542,
+      "gap_p95_ms": 307.5280869555808,
+      "kv_peak_blocks": 0.0,
+      "kv_peak_mib": 0.0,
+      "forward_count": -36.48648648648649,
+      "mixed_forward_count": null,
+      "eager_count": -81.4814814814815,
+      "full_graph_replays": -57.446808510638306,
+      "piecewise_graph_replays": null,
+      "piecewise_segment_replays": null,
+      "cuda_graph_replays": 1300.0,
+      "gpu_feedback_tokens": null,
+      "async_depth": null,
+      "scheduler_ms": 347.9522190832186,
+      "cpu_step_ms": -14.808950212554429,
+      "prefill_tokens": 0.0,
+      "decode_tokens": 0.0,
+      "steps": -35.13513513513513,
+      "empty_steps": -94.44444444444444
+    },
+    "paired_change_pct": {
+      "output_tok_s": {
+        "values": [
+          14.46427357906941,
+          17.22520720189984,
+          17.636811213009462,
+          16.034198421499156,
+          23.210516695201775,
+          18.202653401924394
+        ],
+        "mean": 17.795610085434006,
+        "median": 17.43100920745465
+      },
+      "wall_ms": {
+        "values": [
+          -12.636496198158987,
+          -14.694115381031004,
+          -14.99259545642887,
+          -13.81851095592891,
+          -18.83809703730077,
+          -15.399530279603734
+        ],
+        "mean": -15.06322421807538,
+        "median": -14.843355418729937
+      },
+      "ttft_mean_ms": {
+        "values": [
+          -5.958572917456162,
+          -7.69115538381151,
+          -8.468869736309514,
+          -6.471417128949131,
+          -14.123354670395983,
+          -6.72435895707234
+        ],
+        "mean": -8.239621465665774,
+        "median": -7.2077571704419245
+      },
+      "ttft_p95_ms": {
+        "values": [
+          -6.316539335598215,
+          -9.057399163868507,
+          -8.993478485495498,
+          -8.010112883173104,
+          -14.475729977575757,
+          -8.205565133104109
+        ],
+        "mean": -9.17647082980253,
+        "median": -8.599521809299803
+      },
+      "tpot_mean_ms": {
+        "values": [
+          2.5405370151459383,
+          0.7818715433619783,
+          1.1101848331971365,
+          1.568809131982718,
+          -2.4716242462801685,
+          -1.7483444295980033
+        ],
+        "mean": 0.29690564130159985,
+        "median": 0.9460281882795574
+      },
+      "existing_tpot_ms": {
+        "values": [
+          -12.636817598373963,
+          -14.69414076796902,
+          -14.99055013649626,
+          -13.822545929595709,
+          -18.83508831824814,
+          -15.385912741274621
+        ],
+        "mean": -15.060842581992953,
+        "median": -14.84234545223264
+      },
+      "request_max_gap_mean_ms": {
+        "values": [
+          -87.3943216661957,
+          -87.83553854057503,
+          -87.33141301495984,
+          -87.17441797509427,
+          -88.4217211385107,
+          -87.91356994994229
+        ],
+        "mean": -87.6784970475463,
+        "median": -87.61493010338536
+      },
+      "existing_max_gap_mean_ms": {
+        "values": [
+          -92.44406196609093,
+          -92.76049904703244,
+          -92.43400014422146,
+          -92.2710742822441,
+          -93.16974224830322,
+          -92.70110388267128
+        ],
+        "mean": -92.63008026176057,
+        "median": -92.5725829243811
+      },
+      "existing_gap_mean_ms": {
+        "values": [
+          -12.636817598373963,
+          -14.69414076796902,
+          -14.99055013649626,
+          -13.822545929595709,
+          -18.83508831824814,
+          -15.385912741274621
+        ],
+        "mean": -15.060842581992953,
+        "median": -14.84234545223264
+      },
+      "max_token_gap_ms": {
+        "values": [
+          -92.44406196609093,
+          -92.76049904703244,
+          -92.43400014422146,
+          -92.2710742822441,
+          -93.16974224830322,
+          -92.70110388267128
+        ],
+        "mean": -92.63008026176057,
+        "median": -92.5725829243811
+      },
+      "gap_p95_ms": {
+        "values": [
+          326.46399723313806,
+          289.795813480381,
+          315.82265042692893,
+          315.06800310094025,
+          297.30218796850704,
+          300.9719629412378
+        ],
+        "mean": 307.5707691918555,
+        "median": 308.01998302108905
+      },
+      "kv_peak_blocks": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "kv_peak_mib": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "forward_count": {
+        "values": [
+          -36.48648648648649,
+          -36.48648648648649,
+          -36.48648648648649,
+          -36.48648648648649,
+          -36.48648648648649,
+          -36.48648648648649
+        ],
+        "mean": -36.48648648648649,
+        "median": -36.48648648648649
+      },
+      "mixed_forward_count": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "eager_count": {
+        "values": [
+          -81.4814814814815,
+          -81.4814814814815,
+          -81.4814814814815,
+          -81.4814814814815,
+          -81.4814814814815,
+          -81.4814814814815
+        ],
+        "mean": -81.4814814814815,
+        "median": -81.4814814814815
+      },
+      "full_graph_replays": {
+        "values": [
+          -57.446808510638306,
+          -57.446808510638306,
+          -57.446808510638306,
+          -57.446808510638306,
+          -57.446808510638306,
+          -57.446808510638306
+        ],
+        "mean": -57.446808510638306,
+        "median": -57.446808510638306
+      },
+      "piecewise_graph_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "piecewise_segment_replays": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "cuda_graph_replays": {
+        "values": [
+          1300.0,
+          1300.0,
+          1300.0,
+          1300.0,
+          1300.0,
+          1300.0
+        ],
+        "mean": 1300.0,
+        "median": 1300.0
+      },
+      "gpu_feedback_tokens": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "async_depth": {
+        "values": [],
+        "mean": null,
+        "median": null
+      },
+      "scheduler_ms": {
+        "values": [
+          405.77013672569126,
+          366.39766328107754,
+          313.5436309509232,
+          447.09161824781694,
+          311.9221581004374,
+          308.9738798271403
+        ],
+        "mean": 358.94984785551446,
+        "median": 339.97064711600035
+      },
+      "cpu_step_ms": {
+        "values": [
+          -12.79432120964702,
+          -14.769276826119937,
+          -15.086371990064817,
+          -14.024981383531198,
+          -18.98257980528506,
+          -15.440670136751466
+        ],
+        "mean": -15.183033558566583,
+        "median": -14.927824408092377
+      },
+      "prefill_tokens": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "decode_tokens": {
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "steps": {
+        "values": [
+          -35.13513513513513,
+          -35.13513513513513,
+          -35.13513513513513,
+          -35.13513513513513,
+          -35.13513513513513,
+          -35.13513513513513
+        ],
+        "mean": -35.13513513513513,
+        "median": -35.13513513513513
+      },
+      "empty_steps": {
+        "values": [
+          -94.44444444444444,
+          -94.44444444444444,
+          -94.44444444444444,
+          -94.44444444444444,
+          -94.44444444444444,
+          -94.44444444444444
+        ],
+        "mean": -94.44444444444444,
+        "median": -94.44444444444444
+      }
+    }
+  }
+]

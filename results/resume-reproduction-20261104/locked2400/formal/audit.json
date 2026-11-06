@@ -1,0 +1,10 @@
+{
+  "source_hashes_unchanged": true,
+  "scheduling_observation_pairs": 120,
+  "scheduling_work_counts_equal": true,
+  "cache_process_pairs": 6,
+  "cache_inputs_and_output_counts_equal": true,
+  "fusion_observation_pairs": 180,
+  "fusion_work_counts_equal": true,
+  "fusion_exact_output_history_pairs": 40
+}

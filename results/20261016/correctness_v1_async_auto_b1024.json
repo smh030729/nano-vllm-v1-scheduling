@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "mode": "v1_async_auto",
+  "source_root": "/mnt/c/Users/47996/Documents/ai infra 2/nano-vllm-v1-scheduling/src",
+  "output": "/mnt/c/Users/47996/Documents/ai infra 2/nano-vllm-v1-scheduling/results/20261016/correctness_v1_async_auto_b1024.json",
+  "model": "/home/xietaibo/models/Qwen3-0.6B",
+  "action": "correctness",
+  "budget": 1024,
+  "kv_blocks": 64,
+  "max_num_seqs": 16,
+  "max_model_len": 4096,
+  "reps": 3,
+  "workloads": [
+    "all_decode",
+    "all_prefill",
+    "long_decode",
+    "many_long",
+    "capacity_pressure"
+  ],
+  "case_timeout": 180,
+  "import": "/mnt/c/Users/47996/Documents/ai infra 2/nano-vllm-v1-scheduling/src/nanovllm/__init__.py",
+  "torch": "2.11.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "dtype": "torch.bfloat16",
+  "blocks": 64,
+  "config": {
+    "max_num_seqs": 16,
+    "max_num_batched_tokens": 1024,
+    "max_model_len": 4096,
+    "gpu_memory_utilization": 0.6,
+    "tensor_parallel_size": 1,
+    "num_kvcache_blocks": 64,
+    "cuda_graph_mode": "auto",
+    "async_scheduling": true,
+    "max_inflight_batches": 2
+  },
+  "graph_capture": {
+    "configured_token_sizes": [
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "full_buckets": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "piecewise_buckets": [
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "full_capture_errors": [],
+    "piecewise_capture_errors": {}
+  },
+  "logit_capture": "GPU row clones at execution; CPU transfer only after all in-flight work drains",
+  "measurement": "accepted token events at engine.step return; no HTTP/network latency",
+  "tpot_definition": "(last accepted output - first accepted output)/(total outputs-1); includes prime",
+  "gap_definition": "consecutive accepted outputs whose later event is in measurement window; crossing interval included",
+  "warmup": "one independent full workload immediately before its measured repetitions; distinct prompt seed",
+  "synchronization": "case boundaries only; prime uses depth=1 in all modes, then restores configured depth",
+  "timing_note": "cpu_step_ms includes blocking result waits; it is not GPU kernel execution time",
+  "logit_rows": 32,
+  "passed_local_assertions": true,
+  "runtime_stats": {
+    "forward_count": 10,
+    "eager_count": 2,
+    "full_graph_replays": 7,
+    "piecewise_graph_replays": 1,
+    "piecewise_segment_replays": 29,
+    "gpu_feedback_tokens": 26,
+    "mixed_forward_count": 2
+  },
+  "complete": true
+}

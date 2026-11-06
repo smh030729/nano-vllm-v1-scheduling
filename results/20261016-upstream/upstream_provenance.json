@@ -1,0 +1,30 @@
+{
+  "baseline_label": "original nano-vLLM bb823b3e06983d71485a8e1f23715ebd87d98ef8",
+  "baseline_source": "C:\\Users\\47996\\Documents\\ai infra 2\\nano-vllm-inference-optimization\\src\\nano-vllm-upstream",
+  "baseline_manifest": "C:\\Users\\47996\\Documents\\ai infra 2\\nano-vllm-inference-optimization\\docs\\upstream_manifest.json",
+  "original_manifest_verified_files": 26,
+  "candidate_label": "V1 unified scheduling, async auto",
+  "budgets": [
+    512,
+    1024
+  ],
+  "kv_blocks": 64,
+  "block_size": 256,
+  "max_num_seqs": 16,
+  "repetitions_per_process": 3,
+  "process_order": [
+    "upstream",
+    "v1_async_auto",
+    "v1_async_auto",
+    "upstream"
+  ],
+  "correctness_thresholds": {
+    "relative_l2_max": 0.03,
+    "cosine_min": 0.999
+  },
+  "baseline_runtime_adjustments": [
+    "Harness replaces cache sizing only to enforce the same 64 blocks on both implementations",
+    "Read-only output/timing/count hooks; teacher-forced token override only during correctness checks"
+  ],
+  "production_source_modified": false
+}

@@ -1,0 +1,215 @@
+{
+  "switches_off": {
+    "options": {
+      "mixed_batching": false,
+      "incremental_kv_allocation": false,
+      "async_scheduling": false,
+      "cuda_graph_mode": "eager"
+    },
+    "finite_output_rows": 24,
+    "pressure_prefill_tokens": 1028,
+    "pressure_prefix_hits": {
+      "pressure_55": 0,
+      "pressure_11": 0,
+      "pressure_22": 0,
+      "pressure_33": 0
+    },
+    "max_inflight": 1,
+    "runtime_stats": {
+      "forward_count": 53,
+      "eager_count": 53,
+      "full_graph_replays": 0,
+      "piecewise_graph_replays": 0,
+      "piecewise_segment_replays": 0,
+      "mixed_forward_count": 0,
+      "gpu_feedback_tokens": 0
+    },
+    "capture_errors": {},
+    "all_resources_released": true,
+    "cold_logits_bitwise_equal": true,
+    "cold_logits_max_abs_error": 0.0,
+    "cold_logits_tolerance": {
+      "rtol": 0,
+      "atol": 0
+    }
+  },
+  "cache_sync_eager": {
+    "options": {
+      "prefix_cache_lookahead": 16,
+      "uncached_first": true,
+      "intrusive_free_queue": true,
+      "async_scheduling": false,
+      "cuda_graph_mode": "eager"
+    },
+    "finite_output_rows": 24,
+    "pressure_prefill_tokens": 260,
+    "pressure_prefix_hits": {
+      "pressure_55": 0,
+      "pressure_11": 256,
+      "pressure_22": 256,
+      "pressure_33": 256
+    },
+    "max_inflight": 1,
+    "runtime_stats": {
+      "forward_count": 32,
+      "eager_count": 32,
+      "full_graph_replays": 0,
+      "piecewise_graph_replays": 0,
+      "piecewise_segment_replays": 0,
+      "mixed_forward_count": 0,
+      "gpu_feedback_tokens": 0
+    },
+    "capture_errors": {},
+    "all_resources_released": true,
+    "cold_logits_bitwise_equal": true,
+    "cold_logits_max_abs_error": 0.0,
+    "cold_logits_tolerance": {
+      "rtol": 0,
+      "atol": 0
+    }
+  },
+  "cache_async_auto": {
+    "options": {
+      "prefix_cache_lookahead": 16,
+      "uncached_first": true,
+      "intrusive_free_queue": true,
+      "async_scheduling": true,
+      "cuda_graph_mode": "auto"
+    },
+    "finite_output_rows": 24,
+    "pressure_prefill_tokens": 260,
+    "pressure_prefix_hits": {
+      "pressure_55": 0,
+      "pressure_11": 256,
+      "pressure_22": 256,
+      "pressure_33": 256
+    },
+    "max_inflight": 2,
+    "runtime_stats": {
+      "forward_count": 32,
+      "eager_count": 1,
+      "full_graph_replays": 11,
+      "piecewise_graph_replays": 20,
+      "piecewise_segment_replays": 580,
+      "mixed_forward_count": 0,
+      "gpu_feedback_tokens": 15
+    },
+    "capture_errors": {},
+    "all_resources_released": true,
+    "cold_logits_bitwise_equal": true,
+    "cold_logits_max_abs_error": 0.0,
+    "cold_logits_tolerance": {
+      "rtol": 0,
+      "atol": 0
+    }
+  },
+  "cache_async_separate_full_reservation": {
+    "options": {
+      "prefix_cache_lookahead": 16,
+      "uncached_first": true,
+      "intrusive_free_queue": true,
+      "mixed_batching": false,
+      "incremental_kv_allocation": false,
+      "async_scheduling": true,
+      "cuda_graph_mode": "auto"
+    },
+    "finite_output_rows": 24,
+    "pressure_prefill_tokens": 260,
+    "pressure_prefix_hits": {
+      "pressure_55": 0,
+      "pressure_11": 256,
+      "pressure_22": 256,
+      "pressure_33": 256
+    },
+    "max_inflight": 2,
+    "runtime_stats": {
+      "forward_count": 32,
+      "eager_count": 1,
+      "full_graph_replays": 11,
+      "piecewise_graph_replays": 20,
+      "piecewise_segment_replays": 580,
+      "mixed_forward_count": 0,
+      "gpu_feedback_tokens": 15
+    },
+    "capture_errors": {},
+    "all_resources_released": true,
+    "cold_logits_bitwise_equal": true,
+    "cold_logits_max_abs_error": 0.0,
+    "cold_logits_tolerance": {
+      "rtol": 0,
+      "atol": 0
+    }
+  },
+  "fused_sync_eager": {
+    "options": {
+      "prefix_cache_lookahead": 16,
+      "uncached_first": true,
+      "intrusive_free_queue": true,
+      "fused_qk_norm_rope": true,
+      "async_scheduling": false,
+      "cuda_graph_mode": "eager"
+    },
+    "finite_output_rows": 24,
+    "pressure_prefill_tokens": 260,
+    "pressure_prefix_hits": {
+      "pressure_55": 0,
+      "pressure_11": 256,
+      "pressure_22": 256,
+      "pressure_33": 256
+    },
+    "max_inflight": 1,
+    "runtime_stats": {
+      "forward_count": 32,
+      "eager_count": 32,
+      "full_graph_replays": 0,
+      "piecewise_graph_replays": 0,
+      "piecewise_segment_replays": 0,
+      "mixed_forward_count": 0,
+      "gpu_feedback_tokens": 0
+    },
+    "capture_errors": {},
+    "all_resources_released": true,
+    "cold_logits_bitwise_equal": true,
+    "cold_logits_max_abs_error": 0.0,
+    "cold_logits_tolerance": {
+      "rtol": 0.01,
+      "atol": 0.125
+    }
+  },
+  "fused_async_auto": {
+    "options": {
+      "prefix_cache_lookahead": 16,
+      "uncached_first": true,
+      "intrusive_free_queue": true,
+      "fused_qk_norm_rope": true,
+      "async_scheduling": true,
+      "cuda_graph_mode": "auto"
+    },
+    "finite_output_rows": 24,
+    "pressure_prefill_tokens": 260,
+    "pressure_prefix_hits": {
+      "pressure_55": 0,
+      "pressure_11": 256,
+      "pressure_22": 256,
+      "pressure_33": 256
+    },
+    "max_inflight": 2,
+    "runtime_stats": {
+      "forward_count": 32,
+      "eager_count": 1,
+      "full_graph_replays": 11,
+      "piecewise_graph_replays": 20,
+      "piecewise_segment_replays": 580,
+      "mixed_forward_count": 0,
+      "gpu_feedback_tokens": 15
+    },
+    "capture_errors": {},
+    "all_resources_released": true,
+    "cold_logits_bitwise_equal": true,
+    "cold_logits_max_abs_error": 0.0,
+    "cold_logits_tolerance": {
+      "rtol": 0.01,
+      "atol": 0.125
+    }
+  }
+}

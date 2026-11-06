@@ -1,0 +1,28 @@
+{
+  "options": {
+    "mixed_batching": false,
+    "incremental_kv_allocation": false,
+    "async_scheduling": false,
+    "cuda_graph_mode": "eager"
+  },
+  "finite_output_rows": 24,
+  "pressure_prefill_tokens": 1028,
+  "pressure_prefix_hits": {
+    "pressure_55": 0,
+    "pressure_11": 0,
+    "pressure_22": 0,
+    "pressure_33": 0
+  },
+  "max_inflight": 1,
+  "runtime_stats": {
+    "forward_count": 53,
+    "eager_count": 53,
+    "full_graph_replays": 0,
+    "piecewise_graph_replays": 0,
+    "piecewise_segment_replays": 0,
+    "mixed_forward_count": 0,
+    "gpu_feedback_tokens": 0
+  },
+  "capture_errors": {},
+  "all_resources_released": true
+}

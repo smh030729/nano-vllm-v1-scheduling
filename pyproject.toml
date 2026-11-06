@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nano-vllm-v1-scheduling"
+version = "0.3.0"
+authors = [{ name = "Xingkai Yu" }]
+license = "MIT"
+license-files = ["LICENSE"]
+readme = "README.md"
+description = "Unified scheduling, incremental KV allocation and asynchronous execution for nano-vLLM"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "torch>=2.4.0",
+    "triton>=3.0.0",
+    "transformers>=4.51.0",
+    "flash-attn",
+    "xxhash",
+    "ninja",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["nanovllm*"]
+
+[tool.setuptools.package-data]
+"nanovllm.ops" = ["csrc/*.cpp", "csrc/*.cu"]

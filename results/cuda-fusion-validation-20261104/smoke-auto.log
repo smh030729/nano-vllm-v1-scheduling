@@ -1,0 +1,50 @@
+{
+  "mode": "auto",
+  "asynchronous": true,
+  "optimizations": {
+    "prefix_cache_lookahead": 16,
+    "uncached_first": true,
+    "intrusive_free_queue": true,
+    "fused_qk_norm_rope": true,
+    "mixed_batching": true,
+    "incremental_kv_allocation": true
+  },
+  "outputs": [
+    [
+      104,
+      78096,
+      11,
+      84216,
+      13,
+      356,
+      1175,
+      13
+    ],
+    [
+      61350,
+      75,
+      384,
+      3968,
+      271,
+      618,
+      271,
+      1843
+    ]
+  ],
+  "stats": {
+    "forward_count": 12,
+    "eager_count": 1,
+    "full_graph_replays": 7,
+    "piecewise_graph_replays": 4,
+    "piecewise_segment_replays": 116,
+    "mixed_forward_count": 4,
+    "gpu_feedback_tokens": 14
+  },
+  "inflight": 2,
+  "captures": {
+    "captures": 58,
+    "forward_replays": 4,
+    "segment_replays": 116
+  },
+  "capture_errors": {}
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "budget": 512,
+    "arm": "integrated",
+    "rows": 32,
+    "bitwise_rows": 2,
+    "max_abs": 0.1875,
+    "max_relative_l2": 0.01783720590174198,
+    "argmax_matches": 31
+  },
+  {
+    "budget": 512,
+    "arm": "combined",
+    "rows": 32,
+    "bitwise_rows": 1,
+    "max_abs": 0.1875,
+    "max_relative_l2": 0.027240712195634842,
+    "argmax_matches": 32
+  },
+  {
+    "budget": 1024,
+    "arm": "integrated",
+    "rows": 32,
+    "bitwise_rows": 16,
+    "max_abs": 0.1875,
+    "max_relative_l2": 0.023204950615763664,
+    "argmax_matches": 31
+  },
+  {
+    "budget": 1024,
+    "arm": "combined",
+    "rows": 32,
+    "bitwise_rows": 8,
+    "max_abs": 0.1875,
+    "max_relative_l2": 0.027240712195634842,
+    "argmax_matches": 31
+  }
+]

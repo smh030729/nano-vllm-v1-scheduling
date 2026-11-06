@@ -1,0 +1,11 @@
+........................................................................ [ 26%]
+.......................................................... [ 48%]
+........................................................................ [ 75%]
+..................................................................  [100%]
+=============================== warnings summary ===============================
+../../nano-vllm/.venv/lib/python3.10/site-packages/torch/jit/_script.py:365: 14 warnings
+  /home/smh/ai_infra/nano-vllm/.venv/lib/python3.10/site-packages/torch/jit/_script.py:365: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+268 passed, 14 warnings, 19 subtests passed in 12.03s

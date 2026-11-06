@@ -1,0 +1,25 @@
+Median of matched workload repetitions in separate ABBA processes.
+Positive relative change means larger; latency regressions are retained.
+Token timestamps are engine.step accepted-result times, not network streaming times.
+TPOT includes priming; token gaps include the interval crossing the measurement boundary.
+budget workload pair mode output_tok_s ttft_mean_ms existing_tpot_ms existing_max_gap_mean_ms kv_peak_blocks forward_count full_graph_replays piecewise_graph_replays async_depth
+512 all_decode v1_async_auto baseline 1340.462 - 2.984 3.865 4.000 47.000 47.000 0.000 0.000
+512 all_decode v1_async_auto v1_async_auto 1519.578 - 2.632 3.295 4.000 47.000 47.000 0.000 2.000
+512 all_prefill v1_async_auto baseline 44.023 40.034 - - 4.000 4.000 0.000 0.000 0.000
+512 all_prefill v1_async_auto v1_async_auto 83.018 21.577 - - 5.000 4.000 0.000 3.000 2.000
+512 long_decode v1_async_auto baseline 779.909 112.759 5.566 117.484 16.000 53.000 47.000 0.000 0.000
+512 long_decode v1_async_auto v1_async_auto 1096.994 68.491 3.956 16.903 16.000 47.000 41.000 5.000 2.000
+512 many_long v1_async_auto baseline 421.244 268.130 12.728 436.854 52.000 71.000 47.000 0.000 0.000
+512 many_long v1_async_auto v1_async_auto 668.948 185.237 8.015 18.441 49.000 47.000 23.000 23.000 2.000
+512 capacity_pressure v1_async_auto baseline 280.388 577.250 25.193 548.231 64.000 101.000 47.000 0.000 0.000
+512 capacity_pressure v1_async_auto v1_async_auto 444.318 383.220 13.011 14.523 49.000 69.000 15.000 53.000 2.000
+1024 all_decode v1_async_auto baseline 1320.404 - 3.029 3.710 4.000 47.000 47.000 0.000 0.000
+1024 all_decode v1_async_auto v1_async_auto 1513.390 - 2.643 3.319 4.000 47.000 47.000 0.000 2.000
+1024 all_prefill v1_async_auto baseline 80.665 24.073 - - 4.000 2.000 0.000 0.000 0.000
+1024 all_prefill v1_async_auto v1_async_auto 95.925 27.383 - - 8.000 2.000 0.000 1.000 2.000
+1024 long_decode v1_async_auto baseline 954.515 63.260 4.547 67.522 16.000 50.000 47.000 0.000 0.000
+1024 long_decode v1_async_auto v1_async_auto 1115.386 58.919 3.891 21.604 16.000 47.000 44.000 2.000 2.000
+1024 many_long v1_async_auto baseline 603.160 155.465 8.889 255.363 52.000 59.000 47.000 0.000 0.000
+1024 many_long v1_async_auto v1_async_auto 691.574 155.676 7.752 23.959 52.000 47.000 35.000 11.000 2.000
+1024 capacity_pressure v1_async_auto baseline 418.978 359.662 16.860 331.459 64.000 74.000 47.000 0.000 0.000
+1024 capacity_pressure v1_async_auto v1_async_auto 491.192 334.275 14.381 24.804 64.000 47.000 20.000 22.000 2.000

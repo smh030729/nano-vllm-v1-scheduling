@@ -1,0 +1,36 @@
+{
+  "logit_rows": 32,
+  "passed_local_assertions": true,
+  "runtime_stats": {
+    "forward_count": 11,
+    "eager_count": 11,
+    "full_graph_replays": 0,
+    "piecewise_graph_replays": 0,
+    "piecewise_segment_replays": 0,
+    "gpu_feedback_tokens": 0,
+    "mixed_forward_count": 3
+  },
+  "gpu_mode": "baseline_eager",
+  "budget": 512,
+  "blocks": 64,
+  "model": "/home/xietaibo/models/Qwen3-0.6B",
+  "source": "/mnt/c/Users/47996/Documents/ai infra 2/nano-vllm-v1-scheduling/baseline",
+  "config": {
+    "max_num_seqs": 16,
+    "max_num_batched_tokens": 512,
+    "max_model_len": 4096,
+    "gpu_memory_utilization": 0.6,
+    "tensor_parallel_size": 1,
+    "enforce_eager": true
+  },
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "dtype": "torch.bfloat16",
+  "graph_capture": {
+    "configured_token_sizes": [],
+    "full_buckets": [],
+    "piecewise_buckets": [],
+    "full_capture_errors": [],
+    "piecewise_capture_errors": {}
+  },
+  "note": "isolated diagnostic only; production and frozen benchmark are unchanged"
+}

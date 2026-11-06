@@ -1,0 +1,587 @@
+{
+  "schema_version": 1,
+  "model": "/home/xietaibo/models/Qwen3-0.6B",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "dtype": "torch.bfloat16",
+  "complete": true,
+  "note": "Only matched full execution histories require bitwise logits; otherwise report relative L2.",
+  "sync_auto": {
+    "outputs": {
+      "0": [
+        700,
+        701,
+        702,
+        703
+      ],
+      "1": [
+        797,
+        798,
+        799
+      ]
+    },
+    "executed": [
+      {
+        "logical": 0,
+        "generation": 0,
+        "start": 0,
+        "count": 255,
+        "prefill": true,
+        "produces_output": true,
+        "output_index": 0,
+        "mode": "piecewise"
+      },
+      {
+        "logical": 1,
+        "generation": 0,
+        "start": 0,
+        "count": 257,
+        "prefill": true,
+        "produces_output": true,
+        "output_index": 0,
+        "mode": "piecewise"
+      },
+      {
+        "logical": 0,
+        "generation": 0,
+        "start": 255,
+        "count": 1,
+        "prefill": false,
+        "produces_output": true,
+        "output_index": 1,
+        "mode": "full"
+      },
+      {
+        "logical": 1,
+        "generation": 0,
+        "start": 257,
+        "count": 1,
+        "prefill": false,
+        "produces_output": true,
+        "output_index": 1,
+        "mode": "full"
+      },
+      {
+        "logical": 0,
+        "generation": 0,
+        "start": 256,
+        "count": 1,
+        "prefill": false,
+        "produces_output": true,
+        "output_index": 2,
+        "mode": "full"
+      },
+      {
+        "logical": 1,
+        "generation": 0,
+        "start": 258,
+        "count": 1,
+        "prefill": false,
+        "produces_output": true,
+        "output_index": 2,
+        "mode": "full"
+      },
+      {
+        "logical": 0,
+        "generation": 0,
+        "start": 257,
+        "count": 1,
+        "prefill": false,
+        "produces_output": true,
+        "output_index": 3,
+        "mode": "full"
+      }
+    ],
+    "max_inflight": 1,
+    "no_resource_leak": true
+  },
+  "async_auto": {
+    "outputs": {
+      "0": [
+        700,
+        701,
+        702,
+        703
+      ],
+      "1": [
+        797,
+        798,
+        799
+      ]
+    },
+    "executed": [
+      {
+        "logical": 0,
+        "generation": 0,
+        "start": 0,
+        "count": 255,
+        "prefill": true,
+        "produces_output": true,
+        "output_index": 0,
+        "mode": "piecewise"
+      },
+      {
+        "logical": 1,
+        "generation": 0,
+        "start": 0,
+        "count": 257,
+        "prefill": true,
+        "produces_output": true,
+        "output_index": 0,
+        "mode": "piecewise"
+      },
+      {
+        "logical": 0,
+        "generation": 0,
+        "start": 255,
+        "count": 1,
+        "prefill": false,
+        "produces_output": true,
+        "output_index": 1,
+        "mode": "full"
+      },
+      {
+        "logical": 1,
+        "generation": 0,
+        "start": 257,
+        "count": 1,
+        "prefill": false,
+        "produces_output": true,
+        "output_index": 1,
+        "mode": "full"
+      },
+      {
+        "logical": 0,
+        "generation": 0,
+        "start": 256,
+        "count": 1,
+        "prefill": false,
+        "produces_output": true,
+        "output_index": 2,
+        "mode": "full"
+      },
+      {
+        "logical": 1,
+        "generation": 0,
+        "start": 258,
+        "count": 1,
+        "prefill": false,
+        "produces_output": true,
+        "output_index": 2,
+        "mode": "full"
+      },
+      {
+        "logical": 0,
+        "generation": 0,
+        "start": 257,
+        "count": 1,
+        "prefill": false,
+        "produces_output": true,
+        "output_index": 3,
+        "mode": "full"
+      }
+    ],
+    "max_inflight": 2,
+    "no_resource_leak": true
+  },
+  "sync_vs_async": {
+    "passed": true,
+    "rows": [
+      {
+        "logical_output": [
+          0,
+          0
+        ],
+        "matched_execution_history": true,
+        "bitwise_required": true,
+        "bitwise_equal": true,
+        "finite": true,
+        "relative_l2": 0.0,
+        "max_abs": 0.0
+      },
+      {
+        "logical_output": [
+          0,
+          1
+        ],
+        "matched_execution_history": true,
+        "bitwise_required": true,
+        "bitwise_equal": true,
+        "finite": true,
+        "relative_l2": 0.0,
+        "max_abs": 0.0
+      },
+      {
+        "logical_output": [
+          0,
+          2
+        ],
+        "matched_execution_history": true,
+        "bitwise_required": true,
+        "bitwise_equal": true,
+        "finite": true,
+        "relative_l2": 0.0,
+        "max_abs": 0.0
+      },
+      {
+        "logical_output": [
+          0,
+          3
+        ],
+        "matched_execution_history": true,
+        "bitwise_required": true,
+        "bitwise_equal": true,
+        "finite": true,
+        "relative_l2": 0.0,
+        "max_abs": 0.0
+      },
+      {
+        "logical_output": [
+          1,
+          0
+        ],
+        "matched_execution_history": true,
+        "bitwise_required": true,
+        "bitwise_equal": true,
+        "finite": true,
+        "relative_l2": 0.0,
+        "max_abs": 0.0
+      },
+      {
+        "logical_output": [
+          1,
+          1
+        ],
+        "matched_execution_history": true,
+        "bitwise_required": true,
+        "bitwise_equal": true,
+        "finite": true,
+        "relative_l2": 0.0,
+        "max_abs": 0.0
+      },
+      {
+        "logical_output": [
+          1,
+          2
+        ],
+        "matched_execution_history": true,
+        "bitwise_required": true,
+        "bitwise_equal": true,
+        "finite": true,
+        "relative_l2": 0.0,
+        "max_abs": 0.0
+      }
+    ]
+  },
+  "prefix_cold": {
+    "outputs": {
+      "0": [
+        700,
+        701
+      ]
+    },
+    "executed": [
+      {
+        "logical": 0,
+        "generation": 0,
+        "start": 0,
+        "count": 257,
+        "prefill": true,
+        "produces_output": true,
+        "output_index": 0,
+        "mode": "eager"
+      },
+      {
+        "logical": 0,
+        "generation": 0,
+        "start": 257,
+        "count": 1,
+        "prefill": false,
+        "produces_output": true,
+        "output_index": 1,
+        "mode": "full"
+      }
+    ],
+    "max_inflight": 1,
+    "no_resource_leak": true
+  },
+  "prefix_warm": {
+    "outputs": {
+      "0": [
+        700,
+        701
+      ]
+    },
+    "executed": [
+      {
+        "logical": 0,
+        "generation": 0,
+        "start": 256,
+        "count": 1,
+        "prefill": true,
+        "produces_output": true,
+        "output_index": 0,
+        "mode": "full"
+      },
+      {
+        "logical": 0,
+        "generation": 0,
+        "start": 257,
+        "count": 1,
+        "prefill": false,
+        "produces_output": true,
+        "output_index": 1,
+        "mode": "full"
+      }
+    ],
+    "max_inflight": 1,
+    "no_resource_leak": true
+  },
+  "prefix_repeat": {
+    "outputs": {
+      "0": [
+        700,
+        701
+      ]
+    },
+    "executed": [
+      {
+        "logical": 0,
+        "generation": 0,
+        "start": 256,
+        "count": 1,
+        "prefill": true,
+        "produces_output": true,
+        "output_index": 0,
+        "mode": "full"
+      },
+      {
+        "logical": 0,
+        "generation": 0,
+        "start": 257,
+        "count": 1,
+        "prefill": false,
+        "produces_output": true,
+        "output_index": 1,
+        "mode": "full"
+      }
+    ],
+    "max_inflight": 1,
+    "no_resource_leak": true
+  },
+  "cold_vs_prefix": {
+    "passed": true,
+    "rows": [
+      {
+        "logical_output": [
+          0,
+          0
+        ],
+        "matched_execution_history": false,
+        "bitwise_required": false,
+        "bitwise_equal": false,
+        "finite": true,
+        "relative_l2": 0.013330485671758652,
+        "max_abs": 0.125
+      },
+      {
+        "logical_output": [
+          0,
+          1
+        ],
+        "matched_execution_history": false,
+        "bitwise_required": false,
+        "bitwise_equal": false,
+        "finite": true,
+        "relative_l2": 0.01188370306044817,
+        "max_abs": 0.09375
+      }
+    ]
+  },
+  "prefix_matched_repeat": {
+    "passed": true,
+    "rows": [
+      {
+        "logical_output": [
+          0,
+          0
+        ],
+        "matched_execution_history": true,
+        "bitwise_required": true,
+        "bitwise_equal": true,
+        "finite": true,
+        "relative_l2": 0.0,
+        "max_abs": 0.0
+      },
+      {
+        "logical_output": [
+          0,
+          1
+        ],
+        "matched_execution_history": true,
+        "bitwise_required": true,
+        "bitwise_equal": true,
+        "finite": true,
+        "relative_l2": 0.0,
+        "max_abs": 0.0
+      }
+    ]
+  },
+  "lifecycle": {
+    "preemption": {
+      "outputs": {
+        "0": [
+          700,
+          701,
+          702
+        ],
+        "1": [
+          797,
+          798,
+          799
+        ]
+      },
+      "executed": [
+        {
+          "logical": 0,
+          "generation": 0,
+          "start": 0,
+          "count": 256,
+          "prefill": true,
+          "produces_output": true,
+          "output_index": 0,
+          "mode": "piecewise"
+        },
+        {
+          "logical": 1,
+          "generation": 0,
+          "start": 0,
+          "count": 256,
+          "prefill": true,
+          "produces_output": true,
+          "output_index": 0,
+          "mode": "piecewise"
+        },
+        {
+          "logical": 0,
+          "generation": 0,
+          "start": 256,
+          "count": 1,
+          "prefill": false,
+          "produces_output": true,
+          "output_index": 1,
+          "mode": "full"
+        },
+        {
+          "logical": 0,
+          "generation": 0,
+          "start": 257,
+          "count": 1,
+          "prefill": false,
+          "produces_output": true,
+          "output_index": 2,
+          "mode": "full"
+        },
+        {
+          "logical": 1,
+          "generation": 1,
+          "start": 0,
+          "count": 257,
+          "prefill": true,
+          "produces_output": true,
+          "output_index": 1,
+          "mode": "eager"
+        },
+        {
+          "logical": 1,
+          "generation": 1,
+          "start": 257,
+          "count": 1,
+          "prefill": false,
+          "produces_output": true,
+          "output_index": 2,
+          "mode": "full"
+        }
+      ],
+      "max_inflight": 2,
+      "no_resource_leak": true,
+      "computed_prefill_tokens": 769
+    },
+    "eos": {
+      "outputs": {
+        "0": [
+          151645
+        ]
+      },
+      "executed": [
+        {
+          "logical": 0,
+          "generation": 0,
+          "start": 0,
+          "count": 255,
+          "prefill": true,
+          "produces_output": true,
+          "output_index": 0,
+          "mode": "eager"
+        },
+        {
+          "logical": 0,
+          "generation": 0,
+          "start": 255,
+          "count": 1,
+          "prefill": false,
+          "produces_output": true,
+          "output_index": 1,
+          "mode": "full"
+        }
+      ],
+      "max_inflight": 2,
+      "no_resource_leak": true
+    },
+    "abort": {
+      "outputs": {
+        "0": []
+      },
+      "executed": [
+        {
+          "logical": 0,
+          "generation": 0,
+          "start": 0,
+          "count": 255,
+          "prefill": true,
+          "produces_output": true,
+          "output_index": 0,
+          "mode": "eager"
+        },
+        {
+          "logical": 0,
+          "generation": 0,
+          "start": 255,
+          "count": 1,
+          "prefill": false,
+          "produces_output": true,
+          "output_index": 1,
+          "mode": "full"
+        }
+      ],
+      "max_inflight": 2,
+      "no_resource_leak": true
+    }
+  },
+  "graph_capture": {
+    "configured_token_sizes": [
+      256,
+      512
+    ],
+    "full_buckets": [
+      1,
+      2
+    ],
+    "piecewise_buckets": [
+      256,
+      512
+    ],
+    "full_capture_errors": [],
+    "piecewise_capture_errors": {}
+  },
+  "passed": true
+}

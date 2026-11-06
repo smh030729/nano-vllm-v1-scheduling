@@ -1,0 +1,370 @@
+{
+  "candidate": "v1_sync_auto",
+  "budget": 1024,
+  "rows": [
+    {
+      "key": [
+        0,
+        0
+      ],
+      "relative_l2": 0.011381079442799091,
+      "cosine": 0.9999316930770874,
+      "max_abs": 0.125,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        0,
+        1
+      ],
+      "relative_l2": 0.009017456322908401,
+      "cosine": 0.9999574422836304,
+      "max_abs": 0.109375,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        0,
+        2
+      ],
+      "relative_l2": 0.010247473604977131,
+      "cosine": 0.9999387264251709,
+      "max_abs": 0.125,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        0,
+        3
+      ],
+      "relative_l2": 0.02557225152850151,
+      "cosine": 0.9997522234916687,
+      "max_abs": 0.17578125,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        0,
+        4
+      ],
+      "relative_l2": 0.011984759010374546,
+      "cosine": 0.9999247789382935,
+      "max_abs": 0.140625,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        0,
+        5
+      ],
+      "relative_l2": 0.013921836391091347,
+      "cosine": 0.9999019503593445,
+      "max_abs": 0.1484375,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        0,
+        6
+      ],
+      "relative_l2": 0.014351234771311283,
+      "cosine": 0.9999241828918457,
+      "max_abs": 0.140625,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        0,
+        7
+      ],
+      "relative_l2": 0.008829085156321526,
+      "cosine": 0.9999649524688721,
+      "max_abs": 0.09765625,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        1,
+        0
+      ],
+      "relative_l2": 0.017101125791668892,
+      "cosine": 0.9998384118080139,
+      "max_abs": 0.15625,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        1,
+        1
+      ],
+      "relative_l2": 0.015428600832819939,
+      "cosine": 0.9998710751533508,
+      "max_abs": 0.28125,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        1,
+        2
+      ],
+      "relative_l2": 0.024478740990161896,
+      "cosine": 0.9996857047080994,
+      "max_abs": 0.1953125,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        1,
+        3
+      ],
+      "relative_l2": 0.019022025167942047,
+      "cosine": 0.999833345413208,
+      "max_abs": 0.203125,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        1,
+        4
+      ],
+      "relative_l2": 0.02297080121934414,
+      "cosine": 0.999788761138916,
+      "max_abs": 0.1875,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        1,
+        5
+      ],
+      "relative_l2": 0.022303003817796707,
+      "cosine": 0.9997784495353699,
+      "max_abs": 0.171875,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        1,
+        6
+      ],
+      "relative_l2": 0.015946153551340103,
+      "cosine": 0.9998733997344971,
+      "max_abs": 0.15625,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        1,
+        7
+      ],
+      "relative_l2": 0.013065784238278866,
+      "cosine": 0.999904215335846,
+      "max_abs": 0.1875,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        2,
+        0
+      ],
+      "relative_l2": 0.0,
+      "cosine": 0.999988317489624,
+      "max_abs": 0.0,
+      "top1_equal": true,
+      "bitwise_equal": true
+    },
+    {
+      "key": [
+        2,
+        1
+      ],
+      "relative_l2": 0.009213869459927082,
+      "cosine": 0.9999465346336365,
+      "max_abs": 0.09375,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        2,
+        2
+      ],
+      "relative_l2": 0.018076712265610695,
+      "cosine": 0.9998300671577454,
+      "max_abs": 0.125,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        2,
+        3
+      ],
+      "relative_l2": 0.016886107623577118,
+      "cosine": 0.9999035596847534,
+      "max_abs": 0.15625,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        2,
+        4
+      ],
+      "relative_l2": 0.008925152011215687,
+      "cosine": 0.999945342540741,
+      "max_abs": 0.14453125,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        2,
+        5
+      ],
+      "relative_l2": 0.010398352518677711,
+      "cosine": 0.9999316334724426,
+      "max_abs": 0.09375,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        2,
+        6
+      ],
+      "relative_l2": 0.011922330595552921,
+      "cosine": 0.999910295009613,
+      "max_abs": 0.09375,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        2,
+        7
+      ],
+      "relative_l2": 0.008044577203691006,
+      "cosine": 0.999954342842102,
+      "max_abs": 0.109375,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        3,
+        0
+      ],
+      "relative_l2": 0.01680220291018486,
+      "cosine": 0.999896764755249,
+      "max_abs": 0.15625,
+      "top1_equal": false,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        3,
+        1
+      ],
+      "relative_l2": 0.017150642350316048,
+      "cosine": 0.999856173992157,
+      "max_abs": 0.1875,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        3,
+        2
+      ],
+      "relative_l2": 0.022122669965028763,
+      "cosine": 0.9998208284378052,
+      "max_abs": 0.171875,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        3,
+        3
+      ],
+      "relative_l2": 0.00857109297066927,
+      "cosine": 0.9999536871910095,
+      "max_abs": 0.109375,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        3,
+        4
+      ],
+      "relative_l2": 0.015030822716653347,
+      "cosine": 0.9999104142189026,
+      "max_abs": 0.125,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        3,
+        5
+      ],
+      "relative_l2": 0.009309804067015648,
+      "cosine": 0.9999427795410156,
+      "max_abs": 0.109375,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        3,
+        6
+      ],
+      "relative_l2": 0.01083220262080431,
+      "cosine": 0.9999428987503052,
+      "max_abs": 0.125,
+      "top1_equal": true,
+      "bitwise_equal": false
+    },
+    {
+      "key": [
+        3,
+        7
+      ],
+      "relative_l2": 0.015187090262770653,
+      "cosine": 0.9998980760574341,
+      "max_abs": 0.125,
+      "top1_equal": true,
+      "bitwise_equal": false
+    }
+  ],
+  "forced_tokens_equal": true,
+  "logit_rows": 32,
+  "max_relative_l2": 0.02557225152850151,
+  "min_cosine": 0.9996857047080994,
+  "top1_equal_rows": 31,
+  "bitwise_equal_rows": 1,
+  "thresholds": {
+    "relative_l2_max": 0.03,
+    "cosine_min": 0.999
+  },
+  "environment_sha256": "2416abd2f5f2627991a432fd45baa0b2978739531691a019dea5102500bd7e8d",
+  "passed": true
+}
